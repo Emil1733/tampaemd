@@ -1,7 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import Calculator from "@/components/Calculator";
-import { HardHat, FileText, CheckCircle, ShieldCheck, Info, MapPoint } from "lucide-react";
+import { HardHat, FileText, CheckCircle, ShieldCheck, Info, MapPin } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
