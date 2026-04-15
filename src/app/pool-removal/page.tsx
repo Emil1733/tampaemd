@@ -6,6 +6,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Professional Pool Removal Tampa | Tampa Pool Demolition",
   description: "Expert pool removal in Tampa Bay. Specializing in high water table dewatering, sandy soil stabilization, and Hillsborough County permits. Compare full vs partial.",
+  alternates: {
+    canonical: "/pool-removal",
+  },
 };
 
 export default function PoolRemoval() {
@@ -75,6 +78,26 @@ export default function PoolRemoval() {
         </div>
       </section>
       
+      <section className="section bg-surface">
+        <div className="container grid grid-cols-2 gap-12 items-center">
+          <div>
+            <h3>Specialized Fiberglass Shell Removal</h3>
+            <p>Fiberglass pools require a different approach than concrete. Because the shells are a single composite unit, they can "pop" out of the ground if the local water table is high. We specialize in the precision extraction and legal disposal of fiberglass shells across Tampa.</p>
+            <Link href="/pool-removal/fiberglass" style={{ fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '1rem', color: 'var(--primary)' }}>
+               Learn about fiberglass extraction <ArrowRight size={16} />
+            </Link>
+          </div>
+          <div className="glass-card" style={{ padding: '2rem', background: 'white' }}>
+            <h4 style={{ marginBottom: '1rem' }}>We also manage:</h4>
+            <ul style={{ listStyle: 'none', padding: 0.5, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <li style={{ display: 'flex', gap: '0.5rem' }}><CheckCircle2 size={18} color="var(--secondary)" /> Vinyl Liner Pool Removal</li>
+              <li style={{ display: 'flex', gap: '0.5rem' }}><CheckCircle2 size={18} color="var(--secondary)" /> Commercial Pool Demolition</li>
+              <li style={{ display: 'flex', gap: '0.5rem' }}><CheckCircle2 size={18} color="var(--secondary)" /> Concrete Deck Extraction</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="section bg-surface text-center">
         <div className="container">
           <h2>Ready to get started?</h2>

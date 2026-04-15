@@ -148,11 +148,23 @@ export default function RootLayout({
             <div>
               <h4 style={{ color: 'white', marginBottom: '1.5rem' }}>Core Service Areas</h4>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                <li style={{ color: 'var(--text-light)' }}>South Tampa & Limits</li>
-                <li style={{ color: 'var(--text-light)' }}>St. Petersburg & Pinellas</li>
-                <li style={{ color: 'var(--text-light)' }}>Clearwater</li>
-                <li style={{ color: 'var(--text-light)' }}>Brandon / Riverview</li>
-                <li style={{ color: 'var(--text-light)' }}>Wesley Chapel</li>
+                <li><Link href="/tampa-service-areas/south-tampa" style={{ color: 'var(--secondary)', fontWeight: 600 }}>South Tampa & Limits</Link></li>
+                <li><Link href="/tampa-service-areas/st-petersburg" style={{ color: 'var(--text-light)' }}>St. Petersburg & Pinellas</Link></li>
+                <li><Link href="/tampa-service-areas/clearwater" style={{ color: 'var(--text-light)' }}>Clearwater</Link></li>
+                <li><Link href="/tampa-service-areas/brandon" style={{ color: 'var(--text-light)' }}>Brandon</Link></li>
+                <li><Link href="/tampa-service-areas/riverview" style={{ color: 'var(--text-light)' }}>Riverview</Link></li>
+                <li><Link href="/tampa-service-areas/carrollwood" style={{ color: 'var(--text-light)' }}>Carrollwood</Link></li>
+                <li><Link href="/tampa-service-areas/wesley-chapel" style={{ color: 'var(--text-light)' }}>Wesley Chapel</Link></li>
+              </ul>
+              
+              <h4 style={{ color: 'white', margin: '2rem 0 1.5rem' }}>Pool Removal Resources</h4>
+              <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <li><Link href="/resources/hillsborough-pool-permits" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Hillsborough County Permits</Link></li>
+                <li><Link href="/resources/pinellas-pool-permits" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Pinellas County Permits</Link></li>
+                <li><Link href="/resources/pasco-pool-permits" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Pasco County Permits</Link></li>
+                <li><Link href="/pool-removal/fiberglass" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Fiberglass Pool Removal</Link></li>
+                <li><Link href="/resources/soil-stabilization-backfill" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Soil Stabilization & Backfill</Link></li>
+                <li><Link href="/resources/high-water-table-dewatering" style={{ color: 'var(--secondary)', fontSize: '0.9rem', fontWeight: 600 }}>Dewatering Specialist Guide</Link></li>
               </ul>
             </div>
 

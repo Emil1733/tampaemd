@@ -2,10 +2,46 @@ import React from "react";
 import Image from "next/image";
 import Calculator from "@/components/Calculator";
 import { CheckCircle, ShieldCheck, MapPin, HardHat, Droplets, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does pool removal cost in Tampa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In Tampa, pool removal typically costs between $9,000 and $16,000. Factors such as pool size, material (concrete vs fiberglass), and groundwater conditions impact the final price."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a permit for pool removal in Hillsborough County?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, pool demolition requires a permit in Hillsborough County. We handle the entire application process, including utility disconnections and final safety inspections."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is dewatering and why is it needed in Tampa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dewatering is the process of lowering the groundwater table around a pool. In Tampa's high water table environment, this is essential to prevent the pool from 'popping' and to ensure stable soil backfill."
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* 1. HERO & CALCULATOR */}
       <section className="hero">
         <div className="container grid grid-cols-2 items-center gap-8">
@@ -48,14 +84,14 @@ export default function Home() {
       </div>
 
       {/* 3. GEO AUTHORITY BLOCK */}
-      <section className="section bg-surface">
+      <section className="section bg-surface reveal">
         <div className="container">
           <div className="grid grid-cols-2 items-center gap-8">
             <div>
               <div className="icon-box">
                 <Droplets size={32} />
               </div>
-              <h2>Why Tampa Pools Require Specialized Removal (High Water Table & Sandy Soil)</h2>
+              <h2>The Science of Tampa Pool Removal: High Water Tables & Sandy Soil</h2>
               <p>
                 Pool removal in Tampa is not the same as inland cities. Most properties sit on <strong>sandy soil with a naturally high water table</strong>, which means improper demolition can lead to ground shifting, drainage issues, or even water intrusion after the project is complete.
               </p>
@@ -74,16 +110,16 @@ export default function Home() {
             </div>
             <div style={{ position: 'relative' }}>
               <div style={{ position: 'absolute', top: '-1rem', left: '-1rem', bottom: '1rem', right: '1rem', border: '2px solid var(--secondary)', borderRadius: 'var(--radius-lg)', zIndex: 0 }}></div>
-              <Image src="/excavator_pool_demolition.png" alt="Excavator performing pool removal backfill" width={1000} height={667} style={{ borderRadius: 'var(--radius-lg)', position: 'relative', zIndex: 1, boxShadow: 'var(--shadow-lg)', maxWidth: '100%', height: 'auto' }} />
+              <Image src="/excavator_pool_demolition.png" alt="Heavy machinery performing precision pool demolition and engineered dirt backfill in Tampa, Florida" width={1000} height={667} style={{ borderRadius: 'var(--radius-lg)', position: 'relative', zIndex: 1, boxShadow: 'var(--shadow-lg)', maxWidth: '100%', height: 'auto' }} />
             </div>
           </div>
         </div>
       </section>
 
       {/* 4. COST BLOCK */}
-      <section className="section section-alt">
+      <section className="section section-alt reveal">
         <div className="container text-center" style={{ maxWidth: '800px' }}>
-          <h2>Tampa Pool Removal Cost (2026 Pricing Guide)</h2>
+          <h2>How Much Does Pool Removal Cost in Tampa? (2026 Price Guide)</h2>
           <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
             Most Tampa homeowners spend between <strong>$9,000 – $16,000</strong> depending on pool type, access, and groundwater conditions.
           </p>
@@ -112,10 +148,10 @@ export default function Home() {
       </section>
 
       {/* 5. PROCESS BLOCK */}
-      <section className="section bg-surface">
+      <section className="section bg-surface reveal">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <h2>Our Tampa Pool Removal Process</h2>
+            <h2>Our Engineered Tampa Pool Removal Process</h2>
             <p>A proven, step-by-step approach ensuring soil stability and proper drainage.</p>
           </div>
           
@@ -174,7 +210,7 @@ export default function Home() {
       </section>
 
       {/* 7. TRUST & TESTIMONIALS */}
-      <section className="section section-alt">
+      <section className="section section-alt reveal">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <h2>Recent Pool Removal Projects in Tampa Bay</h2>
@@ -220,11 +256,19 @@ export default function Home() {
             <h2>Serving Tampa & Surrounding Areas</h2>
             <p>We provide specialized pool removal, dewatering, and property grading across the entire Tampa Bay area, including:</p>
             <div className="grid grid-cols-2" style={{ gap: '1rem', marginTop: '2rem' }}>
-              {['Tampa', 'Brandon', 'St. Petersburg', 'Riverview', 'Clearwater', 'Wesley Chapel'].map((city) => (
-                <div key={city} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', fontWeight: '500' }}>
+              {[
+                { name: 'Tampa', href: '/tampa-service-areas/south-tampa' }, 
+                { name: 'Brandon', href: '/tampa-service-areas/brandon' }, 
+                { name: 'St. Petersburg', href: '/tampa-service-areas/st-petersburg' }, 
+                { name: 'Riverview', href: '/tampa-service-areas/riverview' }, 
+                { name: 'Clearwater', href: '/tampa-service-areas/clearwater' }, 
+                { name: 'Carrollwood', href: '/tampa-service-areas/carrollwood' },
+                { name: 'Wesley Chapel', href: '/tampa-service-areas/wesley-chapel' }
+              ].map((city) => (
+                <Link key={city.name} href={city.href} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', fontWeight: '500', color: 'var(--text-main)', textDecoration: 'none' }}>
                   <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--secondary)' }}></div>
-                  {city}
-                </div>
+                  {city.name}
+                </Link>
               ))}
             </div>
           </div>

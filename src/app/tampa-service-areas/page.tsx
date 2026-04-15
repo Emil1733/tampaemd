@@ -14,6 +14,7 @@ const locations = [
   { city: "Riverview", desc: "Specializing in high water table dynamics near local water bodies." },
   { city: "Clearwater", desc: "Navigating tight property lines and heavy coastal soil regulations." },
   { city: "St. Petersburg", desc: "Full demolition and permitting under strict Pinellas County guidelines." },
+  { city: "Carrollwood", desc: "Specialized soil stabilization and tree protection for North Tampa neighborhoods." },
   { city: "Wesley Chapel", desc: "Rapid removal for new construction and property expansions." }
 ];
 
@@ -38,7 +39,19 @@ export default function ServiceAreas() {
                 <h3 style={{ borderBottom: '2px solid var(--secondary)', paddingBottom: '0.75rem', display: 'inline-block', color: 'var(--primary-dark)' }}>{loc.city} Pool Removal</h3>
                 <p style={{ color: 'var(--text-muted)', marginTop: '1rem', flexGrow: 1 }}>{loc.desc}</p>
                 <div style={{ marginTop: '1.5rem' }}>
-                  <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600 }}>
+                  <Link 
+                    href={
+                      loc.city === "Tampa" ? "/tampa-service-areas/south-tampa" : 
+                      loc.city === "Brandon" ? "/tampa-service-areas/brandon" : 
+                      loc.city === "Riverview" ? "/tampa-service-areas/riverview" : 
+                      loc.city === "Carrollwood" ? "/tampa-service-areas/carrollwood" : 
+                      loc.city === "St. Petersburg" ? "/tampa-service-areas/st-petersburg" : 
+                      loc.city === "Clearwater" ? "/tampa-service-areas/clearwater" : 
+                      loc.city === "Wesley Chapel" ? "/tampa-service-areas/wesley-chapel" : 
+                      "/contact"
+                    } 
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 600 }}
+                  >
                     Request {loc.city} Estimate <ArrowRight size={16} />
                   </Link>
                 </div>

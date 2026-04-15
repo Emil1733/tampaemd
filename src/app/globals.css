@@ -38,7 +38,25 @@
   --radius-md: 12px;
   --radius-lg: 20px;
   --radius-xl: 30px;
+
+  /* Premium Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  --transition-bounce: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
+
+@keyframes scroll-reveal {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  animation: scroll-reveal 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.reveal-delay-1 { animation-delay: 0.1s; }
+.reveal-delay-2 { animation-delay: 0.2s; }
+.reveal-delay-3 { animation-delay: 0.3s; }
 
 * {
   box-sizing: border-box;
@@ -227,14 +245,20 @@ select.input-field {
 
 /* Glass Card */
 .glass-card {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
   box-shadow: var(--shadow-lg);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: var(--transition-smooth);
+}
+
+.glass-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-float);
+  border-color: var(--secondary-light);
 }
 
 .trust-bar {
