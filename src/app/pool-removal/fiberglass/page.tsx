@@ -57,7 +57,7 @@ export default function FiberglassRemoval() {
                      <div style={{ fontWeight: 800, color: "var(--primary)", fontSize: "1.25rem" }}>0{i+1}</div>
                      <div>
                         <h4 style={{ margin: 0 }}>{step.title}</h4>
-                        <p style={{ margin: "0.5rem 0 0", color: "var(--text-muted)", fontSize: "0.9rem" }}>{step.text}</p>
+                        <p style={{ margin: "0.5rem 0 0", color: "var(--text-muted)", fontSize: "0.9rem" }}>{step.desc}</p>
                      </div>
                   </div>
                ))}
