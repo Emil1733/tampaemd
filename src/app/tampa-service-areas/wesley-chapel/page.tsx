@@ -1,5 +1,5 @@
 import React from "react";
-import type { Metadata } from "metadata";
+import type { Metadata } from "next";
 import { CheckCircle, ShieldCheck, MapPin, HardHat, Droplets, FastForward, Info, Target, Activity, Waves, HelpCircle, Microscope, TreePine, Anchor, Home } from "lucide-react";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
