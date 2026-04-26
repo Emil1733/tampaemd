@@ -2,13 +2,8 @@
 // Force re-bundling to fix Lucide icon factory error in Turbopack
 
 import React, { useState } from "react";
-import { createClient } from "@supabase/supabase-js";
-import { Calculator as CalcIcon, Droplets, Ruler, Truck, User, Phone, CheckCircle2, ArrowRight } from "lucide-react";
-
-// Initialize Supabase. Requires NEXT_PUBLIC vars to be set.
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+import { Calculator as CalcIcon, Droplets, Ruler, Truck, User, Phone, CheckCircle2, ArrowRight, ShieldAlert } from "lucide-react";
+import { submitLead } from "@/app/actions/submitLead";
 
 export default function Calculator() {
   const [step, setStep] = useState(1);
@@ -18,42 +13,27 @@ export default function Calculator() {
     waterConditions: "",
     access: "",
     name: "",
-    phone: ""
+    phone: "",
+    website: "" // Honeypot field
   });
   const [priceRange, setPriceRange] = useState({ min: 0, max: 0 });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const calculatePrice = (data: typeof formData) => {
     let min = 9000;
     let max = 13000;
 
-    // Base on pool type
-    if (data.poolType === "Concrete") {
-      min = 10000;
-      max = 16000;
-    } else if (data.poolType === "Vinyl") {
-      min = 8000;
-      max = 12000;
-    }
+    if (data.poolType === "Concrete") { min = 10000; max = 16000; }
+    else if (data.poolType === "Vinyl") { min = 8000; max = 12000; }
 
-    // Size multiplier
-    if (data.size === "Medium") {
-      min += 1500; max += 2000;
-    } else if (data.size === "Large") {
-      min += 3000; max += 4500;
-    }
+    if (data.size === "Medium") { min += 1500; max += 2000; }
+    else if (data.size === "Large") { min += 3000; max += 4500; }
 
-    // Access
-    if (data.access === "Limited") {
-      min += 1500; max += 3000;
-    } else if (data.access === "Tight") {
-      min += 2500; max += 4000;
-    }
+    if (data.access === "Limited") { min += 1500; max += 3000; }
+    else if (data.access === "Tight") { min += 2500; max += 4000; }
 
-    // Water conditions
-    if (data.waterConditions === "High Water Table") {
-      min += 1500; max += 2500; // dewatering costs
-    }
+    if (data.waterConditions === "High Water Table") { min += 1500; max += 2500; }
 
     setPriceRange({ min, max });
     setStep(2);
@@ -71,33 +51,15 @@ export default function Calculator() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
-    try {
-      const estimatedPrice = `$${priceRange.min.toLocaleString()} - $${priceRange.max.toLocaleString()}`;
-      
-      // Combine missing fields into pool_size so we conform strictly to the existing schema
-      const mappedPoolSize = `${formData.size} | Water: ${formData.waterConditions} | Access: ${formData.access}`;
+    const result = await submitLead({ ...formData, priceRange });
 
-      const { error } = await supabase
-        .from('emd_leads_atlanta')
-        .insert([
-          {
-            full_name: formData.name,
-            phone: formData.phone,
-            pool_type: formData.poolType,
-            pool_size: mappedPoolSize,
-            estimated_price_range: estimatedPrice,
-            source_page: 'Tampa Home Calculator'
-          }
-        ]);
-
-      if (error) {
-        console.error("Error submitting lead:", error);
-      }
+    if (result.error) {
+      setError(result.error);
+      setIsSubmitting(false);
+    } else {
       setStep(3); // Success
-    } catch (err) {
-      console.error("Unexpected error:", err);
-    } finally {
       setIsSubmitting(false);
     }
   };
@@ -221,7 +183,25 @@ export default function Calculator() {
              </div>
           </div>
 
-          <button type="submit" disabled={isSubmitting} className="btn btn-accent" style={{ width: '100%', marginTop: '1.5rem', borderRadius: 'var(--radius-md)' }}>
+          {/* Secure Honeypot - Hidden from humans */}
+          <div style={{ display: 'none' }} aria-hidden="true">
+            <input 
+              type="text" 
+              name="website" 
+              tabIndex={-1} 
+              autoComplete="off" 
+              onChange={handleChange} 
+              value={formData.website} 
+            />
+          </div>
+
+          {error && (
+            <div style={{ padding: '1rem', background: '#fee2e2', color: '#dc2626', borderRadius: '8px', marginBottom: '1.5rem', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <ShieldAlert size={16} /> {error}
+            </div>
+          )}
+
+          <button type="submit" disabled={isSubmitting} className="btn btn-accent" style={{ width: '100%', marginTop: '0.5rem', borderRadius: 'var(--radius-md)' }}>
             {isSubmitting ? "Generating Report..." : "Get My Professional Site Analysis"}
           </button>
           

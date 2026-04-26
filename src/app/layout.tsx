@@ -165,6 +165,9 @@ export default function RootLayout({
                 <li><Link href="/pool-removal/fiberglass" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Fiberglass Pool Removal</Link></li>
                 <li><Link href="/resources/soil-stabilization-backfill" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Soil Stabilization & Backfill</Link></li>
                 <li><Link href="/resources/high-water-table-dewatering" style={{ color: 'var(--secondary)', fontSize: '0.9rem', fontWeight: 600 }}>Dewatering Specialist Guide</Link></li>
+                <li><Link href="/blog/do-you-need-a-permit-in-tampa" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Mandatory Permit Guide</Link></li>
+                <li><Link href="/blog/high-water-table-issues" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Hydrostatic Pressure Guide</Link></li>
+                <li><Link href="/blog/building-after-pool-removal" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Building Over Pools Guide</Link></li>
               </ul>
             </div>
 

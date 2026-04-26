@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "gsc-index": "node scripts/google-index.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.101.1",
+    "googleapis": "^171.4.0",
     "lucide-react": "^1.7.0",
     "next": "16.2.2",
     "react": "19.2.4",
