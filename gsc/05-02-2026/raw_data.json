@@ -1,0 +1,70 @@
+{
+  "period": "2026-04-25 to 2026-05-02",
+  "queries": [
+    {
+      "keys": [
+        "pool demolition"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 14.857142857142858
+    },
+    {
+      "keys": [
+        "pool demolition tampa"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "keys": [
+        "pool removal tampa"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 18.142857142857142
+    }
+  ],
+  "pages": [
+    {
+      "keys": [
+        "https://poolremovaltampa.com/"
+      ],
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 21.22222222222222
+    },
+    {
+      "keys": [
+        "https://poolremovaltampa.com/tampa-service-areas/clearwater"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 31.75
+    },
+    {
+      "keys": [
+        "https://poolremovaltampa.com/tampa-service-areas/st-petersburg"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 24
+    },
+    {
+      "keys": [
+        "https://www.poolremovaltampa.com/blog/do-you-need-a-permit-in-tampa"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    }
+  ]
+}
