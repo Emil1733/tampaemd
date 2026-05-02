@@ -14,27 +14,44 @@ export const metadata: Metadata = {
 };
 
 export default function Clearwater() {
+  const faqs = [
+    { q: "How much does pool removal cost in Clearwater?", a: "Residential removals in Clearwater typically range from $8,000 to $17,000. Factors include access complexity and whether dewatering is required." },
+    { q: "Do I need a permit in Clearwater?", a: "Yes. Both the City of Clearwater and Pinellas County require a building/demolition permit. We handle all paperwork and final inspections." },
+    { q: "Can you remove a pool in Island Estates?", a: "Yes. We specialize in high-water-table removals on the islands, utilizing specialized dewatering arrays to protect your property foundation." },
+    { q: "Will the machinery damage my driveway?", a: "We use heavy-duty composite mats to distribute the weight of our excavators, ensuring your concrete or pavers remain pristine." },
+    { q: "How long does the process take?", a: "Most Clearwater projects are completed in 4 to 6 days, from initial drainage to final grade and sod prep." },
+    { q: "Can I build a boat pad where the pool was?", a: "Yes, but only with a **Full Engineered Removal** and 95% Proctor compaction to support the weight of the boat and trailer." },
+    { q: "What is the 'High Water Table' risk in Sand Key?", a: "Significant. Because Sand Key is a barrier island, the water table is extremely shallow. We use advanced dewatering to ensure a safe removal." },
+    { q: "Do you remove the pool cage (lanai)?", a: "Yes. We disassemble and recycle the aluminum structure as part of our total demolition service." },
+    { q: "What type of fill dirt do you use?", a: "We use A-3 certified clean sand, which matches the natural drainage profile of North Pinellas soils." },
+    { q: "Is your company insured for Clearwater projects?", a: "Yes. We carry $2M in general liability and workers' comp specifically for heavy excavation and demolition work." },
+    { q: "Can you remove a fiberglass pool in Countryside?", a: "Yes. Fiberglass requires specific extraction techniques to prevent collapsing the surrounding soil, which we specialize in." },
+    { q: "What about my pool heater and pump?", a: "We remove all mechanical equipment, capping the lines at the source and disposing of the units properly." },
+    { q: "What is the 'FEMA 50% Rule' in Clearwater?", a: "In designated flood zones, substantial improvements (including pool removal and subsequent building) are limited by FEMA valuation rules. Our engineered removals help you stay within these compliance brackets." },
+    { q: "How do you protect the Intracoastal during work?", a: "We utilize dual-stage silt curtains and turbidity logs to ensure that no sediment or debris enters the Pinellas County watershed." },
+    { q: "What is the difference between A-3 and A-2-4 sand in Pinellas?", a: "A-3 is a clean, marine-grade sand that allows for rapid drainage. A-2-4 contains more silt and can hold water, which we avoid in coastal backfills." },
+    { q: "Do you handle Belleair arborist reviews?", a: "Yes. The Town of Belleair has very strict tree protection codes. We coordinate all arborist reviews and root-mapping before mobilization." },
+    { q: "How do you manage 'Tidal Fluctuation' during dewatering?", a: "We utilize pressure-monitored well-points that automatically adjust to the tidal head-pressure, ensuring the excavation remains dry and stable." },
+    { q: "Can I build an outdoor kitchen over the old pool site?", a: "Yes. With a full extraction and certified 95% Proctor compaction, the soil has the load-bearing capacity for gas lines, masonry, and heavy appliances." },
+    { q: "Does the City of Clearwater require a final survey?", a: "In most cases, yes. We coordinate the final grading inspection and survey submission to close out your permit correctly." },
+    { q: "How do you prevent 'Lateral Soil Movement' near seawalls?", a: "We utilize interlocking shoring plates and precision excavation to ensure the soil behind your seawall remains undisturbed." },
+    { q: "What is the ROI of pool removal in Island Estates?", a: "Homeowners typically see a significant ROI by reclaiming high-value waterfront lot space for boat storage or luxury landscaping." },
+    { q: "Are you licensed for hazardous material disposal?", a: "Yes. We handle the safe disposal of old chlorine systems and saltwater cells according to Pinellas County environmental regulations." },
+    { q: "Do you provide GPR mapping in Countryside?", a: "Yes, we use Ground Penetrating Radar to identify private utility lines and septic systems that may not be on city maps." },
+    { q: "Can you remove a pool with a screen enclosure over it?", a: "Yes. We typically disassemble the enclosure first, recycling the aluminum, before moving the heavy machinery onto the shell." }
+  ];
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does pool removal cost in Clearwater?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "In Clearwater, pool removal typically costs between $10,000 and $17,000, with coastal engineering and barrier island logistics being primary cost factors."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need a permit for pool removal in Clearwater?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Clearwater requires building and environmental permits. We manage the entire administrative process for Pinellas County homeowners."
-        }
+    "mainEntity": faqs.map(item => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
       }
-    ]
+    }))
   };
 
   return (
@@ -381,32 +398,7 @@ export default function Clearwater() {
             <p>Expert Answers for Pinellas County Homeowners</p>
           </div>
           <div className="grid grid-cols-3 gap-x-8 gap-y-12">
-            {[
-              { q: "How much does pool removal cost in Clearwater?", a: "Residential removals in Clearwater typically range from $8,000 to $17,000. Factors include access complexity and whether dewatering is required." },
-              { q: "Do I need a permit in Clearwater?", a: "Yes. Both the City of Clearwater and Pinellas County require a building/demolition permit. We handle all paperwork and final inspections." },
-              { q: "Can you remove a pool in Island Estates?", a: "Yes. We specialize in high-water-table removals on the islands, utilizing specialized dewatering arrays to protect your property foundation." },
-              { q: "Will the machinery damage my driveway?", a: "We use heavy-duty composite mats to distribute the weight of our excavators, ensuring your concrete or pavers remain pristine." },
-              { q: "How long does the process take?", a: "Most Clearwater projects are completed in 4 to 6 days, from initial drainage to final grade and sod prep." },
-              { q: "Can I build a boat pad where the pool was?", a: "Yes, but only with a **Full Engineered Removal** and 95% Proctor compaction to support the weight of the boat and trailer." },
-              { q: "What is the 'High Water Table' risk in Sand Key?", a: "Significant. Because Sand Key is a barrier island, the water table is extremely shallow. We use advanced dewatering to ensure a safe removal." },
-              { q: "Do you remove the pool cage (lanai)?", a: "Yes. We disassemble and recycle the aluminum structure as part of our total demolition service." },
-              { q: "What type of fill dirt do you use?", a: "We use A-3 certified clean sand, which matches the natural drainage profile of North Pinellas soils." },
-              { q: "Is your company insured for Clearwater projects?", a: "Yes. We carry $2M in general liability and workers' comp specifically for heavy excavation and demolition work." },
-              { q: "Can you remove a fiberglass pool in Countryside?", a: "Yes. Fiberglass requires specific extraction techniques to prevent collapsing the surrounding soil, which we specialize in." },
-              { q: "What about my pool heater and pump?", a: "We remove all mechanical equipment, capping the lines at the source and disposing of the units properly." },
-              { q: "What is the 'FEMA 50% Rule' in Clearwater?", a: "In designated flood zones, substantial improvements (including pool removal and subsequent building) are limited by FEMA valuation rules. Our engineered removals help you stay within these compliance brackets." },
-              { q: "How do you protect the Intracoastal during work?", a: "We utilize dual-stage silt curtains and turbidity logs to ensure that no sediment or debris enters the Pinellas County watershed." },
-              { q: "What is the difference between A-3 and A-2-4 sand in Pinellas?", a: "A-3 is a clean, marine-grade sand that allows for rapid drainage. A-2-4 contains more silt and can hold water, which we avoid in coastal backfills." },
-              { q: "Do you handle Belleair arborist reviews?", a: "Yes. The Town of Belleair has very strict tree protection codes. We coordinate all arborist reviews and root-mapping before mobilization." },
-              { q: "How do you manage 'Tidal Fluctuation' during dewatering?", a: "We utilize pressure-monitored well-points that automatically adjust to the tidal head-pressure, ensuring the excavation remains dry and stable." },
-              { q: "Can I build an outdoor kitchen over the old pool site?", a: "Yes. With a full extraction and certified 95% Proctor compaction, the soil has the load-bearing capacity for gas lines, masonry, and heavy appliances." },
-              { q: "Does the City of Clearwater require a final survey?", a: "In most cases, yes. We coordinate the final grading inspection and survey submission to close out your permit correctly." },
-              { q: "How do you prevent 'Lateral Soil Movement' near seawalls?", a: "We utilize interlocking shoring plates and precision excavation to ensure the soil behind your seawall remains undisturbed." },
-              { q: "What is the ROI of pool removal in Island Estates?", a: "Homeowners typically see a significant ROI by reclaiming high-value waterfront lot space for boat storage or luxury landscaping." },
-              { q: "Are you licensed for hazardous material disposal?", a: "Yes. We handle the safe disposal of old chlorine systems and saltwater cells according to Pinellas County environmental regulations." },
-              { q: "Do you provide GPR mapping in Countryside?", a: "Yes, we use Ground Penetrating Radar to identify private utility lines and septic systems that may not be on city maps." },
-              { q: "Can you remove a pool with a screen enclosure over it?", a: "Yes. We typically disassemble the enclosure first, recycling the aluminum, before moving the heavy machinery onto the shell." }
-            ].map((faq, i) => (
+            {faqs.map((faq, i) => (
               <div key={i} className="faq-item">
                 <h4 style={{ color: "var(--primary)", fontSize: "1rem", marginBottom: "0.75rem" }}>{faq.q}</h4>
                 <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--text-muted)" }}>{faq.a}</p>

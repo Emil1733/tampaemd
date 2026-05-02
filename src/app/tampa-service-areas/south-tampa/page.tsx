@@ -13,19 +13,44 @@ export const metadata: Metadata = {
 };
 
 export default function SouthTampa() {
+  const faqs = [
+    { q: "How much does pool removal cost in South Tampa?", a: "South Tampa removals typically range from $9,000 to $18,000. The slightly higher cost compared to Brandon is due to tighter access and mandatory dewatering requirements." },
+    { q: "Do you need a permit in the City of Tampa?", a: "Yes. The City of Tampa requires a building permit for any pool removal. We handle all paperwork and inspections as part of our turnkey service." },
+    { q: "Will your machines fit through my narrow side yard?", a: "Most likely. We have specialized equipment that can fit through a 36-inch gate, though a 6-foot opening is preferred for maximum efficiency." },
+    { q: "What is the 'Water Table' risk near the Bay?", a: "Significant. Groundwater is often found within 3 feet of the surface. We utilize continuous well-point dewatering to ensure a safe and stable demolition." },
+    { q: "How long does the process take?", a: "A typical South Tampa project takes 5 to 7 business days, including the time required for city inspections." },
+    { q: "Can I build an ADU where the pool was?", a: "Yes, but only with a **Full Engineered Removal** and 98% Proctor density compaction to support the new foundation." },
+    { q: "Do you remove the pool cage (lanai)?", a: "Yes. We disassemble and recycle the aluminum structure as part of our total project management." },
+    { q: "What type of fill dirt do you use?", a: "We use clean A-3 certified sand, which matches the natural drainage profile of South Tampa's native soils." },
+    { q: "Is your company insured for South Tampa projects?", a: "Yes. We carry $2M in general liability and workers' comp specifically for heavy excavation and demolition work." },
+    { q: "Can you remove a fiberglass pool in Culbreath Isles?", a: "Yes. Fiberglass requires specific extraction techniques to prevent collapsing the surrounding soil, which we specialize in." },
+    { q: "What happens to the old pool equipment?", a: "We remove the pump, filter, and heater, capping all lines at the source and disposing of the units properly." },
+    { q: "How do you protect my neighbors' property?", a: "We utilize temporary shoring and precision mini-machinery. Every project includes a pre-construction survey to document existing conditions." },
+    { q: "What is 'Lateral Pressure' in waterfront properties?", a: "It is the side-force exerted by saturated soil against structures like seawalls. Removing a pool shell removes a 'counter-weight,' so we utilize specialized shoring to maintain this balance." },
+    { q: "Do you handle historic district arborist reviews?", a: "Yes. For properties in Hyde Park or Virginia Park, we coordinate directly with the City of Tampa arborist to protect historic Grand Oaks." },
+    { q: "What is the difference between A-3 and A-2-4 fill sand?", a: "A-3 is a fine, clean sand ideal for South Tampa's drainage. A-2-4 contains more silts/clays and is avoided to prevent 'Muck' pockets and poor drainage." },
+    { q: "How do you prevent 'Soil Liquefaction' in 33611?", a: "In the sandy soils of 33611, vibrations from heavy machinery can cause soil to behave like a liquid. We utilize low-impact, high-frequency hammers to minimize this risk." },
+    { q: "Is GPR (Ground Penetrating Radar) necessary?", a: "For properties near Bayshore or those with suspected unknown utilities, we utilize GPR to map the sub-surface before excavation begins." },
+    { q: "How do you handle 'Muck' pockets under old shells?", a: "If organic 'muck' is found during excavation, it must be removed and replaced with engineered sand to prevent future settlement of the lot." },
+    { q: "Does pool removal increase property taxes?", a: "Usually the opposite. Removing a pool often lowers your property's assessed value for tax purposes, saving you $400-$800 annually in Hillsborough County." },
+    { q: "What are the specific City of Tampa noise ordinances?", a: "Construction is typically limited to 7:00 AM - 6:00 PM. We schedule our high-impact demolition phases to occur mid-day to minimize neighbor disruption." },
+    { q: "Do you provide a 'Clean Title' guarantee?", a: "Yes. We provide a final 'Certificate of Completion' and a lien release, ensuring your property title is clean for future real estate transactions." },
+    { q: "How do you protect Bayshore seawalls?", a: "We maintain a technical 'Setback Zone' and utilize pressure-relief well-points to ensure the seawall's structural integrity isn't compromised by soil movement." },
+    { q: "Can I build a pool house where the pool was?", a: "Yes. Our engineered backfill process provides the load-bearing capacity (98% Proctor) required for permanent secondary structures." },
+    { q: "What is the ROI of removing a pool in Palma Ceia?", a: "Homeowners often see a 2x ROI through reclaimed yard space and the removal of maintenance/liability costs from the property title." }
+  ];
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does pool removal cost in South Tampa?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "In South Tampa, pool removal typically costs between $9,000 and $18,000. The slightly higher cost is due to tight-access logistics and mandatory dewatering requirements."
-        }
+    "mainEntity": faqs.map(item => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
       }
-    ]
+    }))
   };
 
   return (
@@ -300,32 +325,7 @@ export default function SouthTampa() {
             <p>25+ Technical Answers for 33606, 33629, and 33611 Homeowners</p>
           </div>
           <div className="grid grid-cols-3 gap-x-8 gap-y-12">
-            {[
-              { q: "How much does pool removal cost in South Tampa?", a: "South Tampa removals typically range from $9,000 to $18,000. The slightly higher cost compared to Brandon is due to tighter access and mandatory dewatering requirements." },
-              { q: "Do you need a permit in the City of Tampa?", a: "Yes. The City of Tampa requires a building permit for any pool removal. We handle all paperwork and inspections as part of our turnkey service." },
-              { q: "Will your machines fit through my narrow side yard?", a: "Most likely. We have specialized equipment that can fit through a 36-inch gate, though a 6-foot opening is preferred for maximum efficiency." },
-              { q: "What is the 'Water Table' risk near the Bay?", a: "Significant. Groundwater is often found within 3 feet of the surface. We utilize continuous well-point dewatering to ensure a safe and stable demolition." },
-              { q: "How long does the process take?", a: "A typical South Tampa project takes 5 to 7 business days, including the time required for city inspections." },
-              { q: "Can I build an ADU where the pool was?", a: "Yes, but only with a **Full Engineered Removal** and 98% Proctor density compaction to support the new foundation." },
-              { q: "Do you remove the pool cage (lanai)?", a: "Yes. We disassemble and recycle the aluminum structure as part of our total project management." },
-              { q: "What type of fill dirt do you use?", a: "We use clean A-3 certified sand, which matches the natural drainage profile of South Tampa's native soils." },
-              { q: "Is your company insured for South Tampa projects?", a: "Yes. We carry $2M in general liability and workers' comp specifically for heavy excavation and demolition work." },
-              { q: "Can you remove a fiberglass pool in Culbreath Isles?", a: "Yes. Fiberglass requires specific extraction techniques to prevent collapsing the surrounding soil, which we specialize in." },
-              { q: "What happens to the old pool equipment?", a: "We remove the pump, filter, and heater, capping all lines at the source and disposing of the units properly." },
-              { q: "How do you protect my neighbors' property?", a: "We utilize temporary shoring and precision mini-machinery. Every project includes a pre-construction survey to document existing conditions." },
-              { q: "What is 'Lateral Pressure' in waterfront properties?", a: "It is the side-force exerted by saturated soil against structures like seawalls. Removing a pool shell removes a 'counter-weight,' so we utilize specialized shoring to maintain this balance." },
-              { q: "Do you handle historic district arborist reviews?", a: "Yes. For properties in Hyde Park or Virginia Park, we coordinate directly with the City of Tampa arborist to protect historic Grand Oaks." },
-              { q: "What is the difference between A-3 and A-2-4 fill sand?", a: "A-3 is a fine, clean sand ideal for South Tampa's drainage. A-2-4 contains more silts/clays and is avoided to prevent 'Muck' pockets and poor drainage." },
-              { q: "How do you prevent 'Soil Liquefaction' in 33611?", a: "In the sandy soils of 33611, vibrations from heavy machinery can cause soil to behave like a liquid. We utilize low-impact, high-frequency hammers to minimize this risk." },
-              { q: "Is GPR (Ground Penetrating Radar) necessary?", a: "For properties near Bayshore or those with suspected unknown utilities, we utilize GPR to map the sub-surface before excavation begins." },
-              { q: "How do you handle 'Muck' pockets under old shells?", a: "If organic 'muck' is found during excavation, it must be removed and replaced with engineered sand to prevent future settlement of the lot." },
-              { q: "Does pool removal increase property taxes?", a: "Usually the opposite. Removing a pool often lowers your property's assessed value for tax purposes, saving you $400-$800 annually in Hillsborough County." },
-              { q: "What are the specific City of Tampa noise ordinances?", a: "Construction is typically limited to 7:00 AM - 6:00 PM. We schedule our high-impact demolition phases to occur mid-day to minimize neighbor disruption." },
-              { q: "Do you provide a 'Clean Title' guarantee?", a: "Yes. We provide a final 'Certificate of Completion' and a lien release, ensuring your property title is clean for future real estate transactions." },
-              { q: "How do you protect Bayshore seawalls?", a: "We maintain a technical 'Setback Zone' and utilize pressure-relief well-points to ensure the seawall's structural integrity isn't compromised by soil movement." },
-              { q: "Can I build a pool house where the pool was?", a: "Yes. Our engineered backfill process provides the load-bearing capacity (98% Proctor) required for permanent secondary structures." },
-              { q: "What is the ROI of removing a pool in Palma Ceia?", a: "Homeowners often see a 2x ROI through reclaimed yard space and the removal of maintenance/liability costs from the property title." }
-            ].map((faq, i) => (
+            {faqs.map((faq, i) => (
               <div key={i} className="faq-item">
                 <h4 style={{ color: "var(--primary)", fontSize: "1rem", marginBottom: "0.75rem" }}>{faq.q}</h4>
                 <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--text-muted)" }}>{faq.a}</p>
