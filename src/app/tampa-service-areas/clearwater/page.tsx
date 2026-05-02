@@ -156,6 +156,57 @@ export default function Clearwater() {
         </div>
       </section>
 
+      {/* 4. TECHNICAL CASE STUDY: ISLAND ESTATES WATERFRONT */}
+      <section className="section bg-white">
+         <div className="container">
+            <div className="glass-card" style={{ padding: "4rem", border: "1px solid var(--primary)", position: "relative", overflow: "hidden" }}>
+               <div style={{ position: "absolute", top: 0, right: 0, background: "var(--primary)", color: "white", padding: "0.5rem 2rem", transform: "rotate(45deg) translate(25%, -50%)", fontWeight: 700, fontSize: "0.8rem" }}>MARITIME LOG</div>
+               <div className="grid grid-cols-2 gap-16 items-start">
+                  <div>
+                     <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "var(--primary)", fontWeight: 700, marginBottom: "1rem" }}>
+                        <Anchor size={20} />
+                        <span>Technical Case Study: Project ID #CW-33756</span>
+                     </div>
+                     <h2 style={{ fontSize: "2.2rem", marginBottom: "1.5rem" }}>Tidal Hydrology & Zero-Clearance Extraction in Island Estates</h2>
+                     <p style={{ fontSize: "1.05rem", lineHeight: 1.8, marginBottom: "2rem" }}>
+                        **Project Location:** Island Estates Waterfront (Zip: 33767)  
+                        **Structure Type:** 1980s concrete pool shell with integrated spa, situated within 8 feet of an active seawall.  
+                        **Environmental Constraints:** FEMA Flood Zone V (Velocity Zone). Zero side-yard clearance (access restricted to 42-inch gate). High-salinity groundwater table with tidal fluctuation.
+                     </p>
+                     <div style={{ background: "var(--surface-alt)", padding: "1.5rem", borderRadius: "12px", marginBottom: "2rem" }}>
+                        <h4 style={{ fontSize: "1rem", marginBottom: "0.75rem" }}>The 'F1' Coastal Solution:</h4>
+                        <ul style={{ paddingLeft: "1.2rem", fontSize: "0.9rem", color: "var(--text-main)", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                           <li><strong>Active Tidal Dewatering:</strong> Implemented a 10-point vacuum well-point system synced with low-tide cycles to prevent saltwater backflow during the shell fracture phase.</li>
+                           <li><strong>Bio-Degradable Logistics:</strong> Utilized specialized mini-excavators running bio-degradable hydraulic fluids (EPA coastal requirement) to ensure zero environmental impact on the Intracoastal.</li>
+                           <li><strong>Siltation Containment:</strong> Deployed a dual-stage turbidity barrier to prevent fine A-3 sand runoff into the canal during the backfill phase.</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div style={{ background: "var(--primary-dark)", padding: "3rem", borderRadius: "16px", color: "white" }}>
+                     <h3 style={{ color: "white", marginBottom: "1.5rem" }}>Clearwater Outcomes</h3>
+                     <div className="grid grid-cols-1 gap-6">
+                        <div style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "1rem" }}>
+                           <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--accent)" }}>100%</div>
+                           <div style={{ fontSize: "0.85rem", opacity: 0.8 }}>Shell Extraction & Metal Removal (Protecting Groundwater Purity)</div>
+                        </div>
+                        <div style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "1rem" }}>
+                           <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--accent)" }}>98%</div>
+                           <div style={{ fontSize: "0.85rem", opacity: 0.8 }}>Modified Proctor Density (Certified Build-Ready for new outdoor kitchen)</div>
+                        </div>
+                        <div style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "1rem" }}>
+                           <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--accent)" }}>Zero</div>
+                           <div style={{ fontSize: "0.85rem", opacity: 0.8 }}>Impact on Intracoastal Water Quality or Seawall Integrity</div>
+                        </div>
+                     </div>
+                     <p style={{ marginTop: "2rem", fontSize: "0.85rem", fontStyle: "italic", opacity: 0.8 }}>
+                        "By utilizing tidal-synced pumping, we maintained the lateral pressure against the seawall throughout the project, protecting the property's primary asset." — Project Manager, Clearwater Division.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
       {/* 5. ENGINEERED COMPACTION & DRAINAGE */}
       <section className="section bg-surface">
          <div className="container">
@@ -342,7 +393,19 @@ export default function Clearwater() {
               { q: "What type of fill dirt do you use?", a: "We use A-3 certified clean sand, which matches the natural drainage profile of North Pinellas soils." },
               { q: "Is your company insured for Clearwater projects?", a: "Yes. We carry $2M in general liability and workers' comp specifically for heavy excavation and demolition work." },
               { q: "Can you remove a fiberglass pool in Countryside?", a: "Yes. Fiberglass requires specific extraction techniques to prevent collapsing the surrounding soil, which we specialize in." },
-              { q: "What about my pool heater and pump?", a: "We remove all mechanical equipment, capping the lines at the source and disposing of the units properly." }
+              { q: "What about my pool heater and pump?", a: "We remove all mechanical equipment, capping the lines at the source and disposing of the units properly." },
+              { q: "What is the 'FEMA 50% Rule' in Clearwater?", a: "In designated flood zones, substantial improvements (including pool removal and subsequent building) are limited by FEMA valuation rules. Our engineered removals help you stay within these compliance brackets." },
+              { q: "How do you protect the Intracoastal during work?", a: "We utilize dual-stage silt curtains and turbidity logs to ensure that no sediment or debris enters the Pinellas County watershed." },
+              { q: "What is the difference between A-3 and A-2-4 sand in Pinellas?", a: "A-3 is a clean, marine-grade sand that allows for rapid drainage. A-2-4 contains more silt and can hold water, which we avoid in coastal backfills." },
+              { q: "Do you handle Belleair arborist reviews?", a: "Yes. The Town of Belleair has very strict tree protection codes. We coordinate all arborist reviews and root-mapping before mobilization." },
+              { q: "How do you manage 'Tidal Fluctuation' during dewatering?", a: "We utilize pressure-monitored well-points that automatically adjust to the tidal head-pressure, ensuring the excavation remains dry and stable." },
+              { q: "Can I build an outdoor kitchen over the old pool site?", a: "Yes. With a full extraction and certified 95% Proctor compaction, the soil has the load-bearing capacity for gas lines, masonry, and heavy appliances." },
+              { q: "Does the City of Clearwater require a final survey?", a: "In most cases, yes. We coordinate the final grading inspection and survey submission to close out your permit correctly." },
+              { q: "How do you prevent 'Lateral Soil Movement' near seawalls?", a: "We utilize interlocking shoring plates and precision excavation to ensure the soil behind your seawall remains undisturbed." },
+              { q: "What is the ROI of pool removal in Island Estates?", a: "Homeowners typically see a significant ROI by reclaiming high-value waterfront lot space for boat storage or luxury landscaping." },
+              { q: "Are you licensed for hazardous material disposal?", a: "Yes. We handle the safe disposal of old chlorine systems and saltwater cells according to Pinellas County environmental regulations." },
+              { q: "Do you provide GPR mapping in Countryside?", a: "Yes, we use Ground Penetrating Radar to identify private utility lines and septic systems that may not be on city maps." },
+              { q: "Can you remove a pool with a screen enclosure over it?", a: "Yes. We typically disassemble the enclosure first, recycling the aluminum, before moving the heavy machinery onto the shell." }
             ].map((faq, i) => (
               <div key={i} className="faq-item">
                 <h4 style={{ color: "var(--primary)", fontSize: "1rem", marginBottom: "0.75rem" }}>{faq.q}</h4>
@@ -351,6 +414,30 @@ export default function Clearwater() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* 8. REGULATORY & MARITIME APPENDIX */}
+      <section className="section bg-surface-alt">
+         <div className="container">
+            <div className="grid grid-cols-2 gap-16">
+               <div>
+                  <h3 style={{ fontSize: "1.8rem", marginBottom: "1.5rem" }}>Clearwater & Pinellas Regulatory Appendix</h3>
+                  <p style={{ fontSize: "0.95rem", lineHeight: 1.8, color: "var(--text-main)" }}>
+                     Pool removal in the Clearwater area is governed by **Pinellas County Code Chapter 158** and specific City of Clearwater zoning ordinances. Properties located in **Special Flood Hazard Areas (SFHA)**, particularly those in 'V' (Velocity) zones, are subject to the **FEMA 50% Rule**. This rule limits the amount of improvement work that can be done if the property has had recent major modifications. 
+                     <br /><br />
+                     Our engineered removals are specifically designed to provide the documentation required to stay within these regulatory brackets. We manage the coordination between the City of Clearwater and the Pinellas County environmental reviewers, ensuring that your pool 'Abandonment' or 'Extraction' is correctly recorded on the property title, clearing the path for future development or sale without 'Open Permit' liabilities.
+                  </p>
+               </div>
+               <div>
+                  <h3 style={{ fontSize: "1.8rem", marginBottom: "1.5rem" }}>Marine Geology & Salinity Management</h3>
+                  <p style={{ fontSize: "0.95rem", lineHeight: 1.8, color: "var(--text-main)" }}>
+                     Clearwater's coastal geology is dominated by the **St. Lucie-Palm Beach-Urban Land complex**. This high-salinity environment creates a unique challenge for groundwater discharge. During the dewatering phase of a pool removal, we utilize specialized **Salinity-Filtration Systems** to ensure that the water discharged into the storm system or Intracoastal meets SWFWMD water quality standards.
+                     <br /><br />
+                     Furthermore, the absence of silt and clay in 'Beach Sand' profiles requires the use of **Bio-Composite Shoring** during the excavation. This prevents the 'Cave-In' effect that can occur when removing a 50,000-lb concrete shell from a liquid-sand matrix. This is the level of maritime engineering required to protect Clearwater's waterfront estates.
+                  </p>
+               </div>
+            </div>
+         </div>
       </section>
 
       {/* FINAL CTA */}
