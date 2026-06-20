@@ -88,7 +88,7 @@ export default function SoilStabilization() {
                 style={{ width: "100%", height: "auto", display: "block" }}
               />
               <div style={{ padding: "1.5rem", background: "white", borderTop: "1px solid var(--border)", fontSize: "0.9rem", fontStyle: "italic", color: "var(--text-muted)" }}>
-                Figure 2.2: Nuclear density testing in progress. Achieving 95-98% Proctor density ensures the reclaimed lot is structural and ready for permanent foundations or ADUs.
+                Figure 2.2: Nuclear density testing in progress. Achieving 95-98% Proctor density ensures the reclaimed lot is structural and ready for permanent foundations, adhering to the <Link href="/blog/building-after-pool-removal" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>structural engineering criteria for building over pools</Link>.
               </div>
             </div>
             <h2 style={{ fontSize: "2.5rem", marginBottom: "2rem" }}>1. The Tampa Hydrological Trap</h2>

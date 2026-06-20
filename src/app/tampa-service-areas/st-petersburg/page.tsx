@@ -57,12 +57,12 @@ export default function StPetersburg() {
             </div>
             <h1>St. Petersburg Pool Removal & Coastal Demolition Experts</h1>
             <p style={{ fontSize: "1.25rem", color: "var(--text-main)", lineHeight: 1.8, marginBottom: "2rem" }}>
-              St. Petersburg is a city of historic charm and coastal complexity. From the brick-lined alleys of **Old Northeast** to the waterfront estates of **Snell Isle**, every pool removal project is a unique engineering challenge. We provide the surgical precision and coastal hydrological expertise required for St. Pete’s diverse and valuable real estate.
+              St. Petersburg is a city of historic charm and coastal complexity. From the brick-lined alleys of **Old Northeast** to the waterfront estates of **Snell Isle**, every pool removal project is a unique engineering challenge. We coordinate all local filings in accordance with <Link href="/resources/pinellas-pool-permits" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Pinellas County permit guidelines</Link>, providing the surgical precision and coastal hydrological expertise required for St. Pete’s diverse and valuable real estate.
             </p>
             <div className="trust-item" style={{ marginBottom: "2rem", background: "rgba(0,180,216,0.05)", padding: "2rem", borderRadius: "var(--radius-lg)", borderLeft: "4px solid var(--primary)" }}>
               <h4 style={{ margin: "0 0 0.5rem", fontSize: "1.1rem" }}>Pinellas County Regulatory Warning</h4>
               <p style={{ margin: 0, fontSize: "0.95rem", color: "var(--text-muted)" }}>
-                Properties in St. Pete's **Coastal High Hazard Area (CHHA)** are subject to strict environmental buffer rules. We ensure your pool removal is 100% compliant with Pinellas County Ordinance #138-177.
+                Properties in St. Pete's **Coastal High Hazard Area (CHHA)** are subject to strict environmental buffer rules. We ensure your pool removal is 100% compliant with Pinellas County Ordinance #138-177, utilizing continuous <Link href="/resources/high-water-table-dewatering" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>well-point dewatering</Link> to secure the site.
               </p>
             </div>
           </div>
@@ -162,7 +162,7 @@ export default function StPetersburg() {
             <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
                <h2 style={{ fontSize: "2.2rem", textAlign: "center", marginBottom: "3rem" }}>4. Engineered Backfill: The Pinellas Protocol</h2>
                <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "3rem", textAlign: "center" }}>
-                  A pool is a hollow vessel. Once removed, it must be replaced by a solid earth matrix. We achieve **95% Proctor Density** to ensure your new land is "Building-Ready."
+                  A pool is a hollow vessel. Once removed, it must be replaced by a solid earth matrix using <Link href="/resources/soil-stabilization-backfill" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>engineered backfill compaction</Link> to achieve a minimum of **95% Proctor Density**, ensuring your new land is "Building-Ready" and protecting your overall <Link href="/pool-removal-cost-tampa" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>pool removal cost investment</Link>.
                </p>
                <div className="grid grid-cols-2 gap-12">
                   <div style={{ border: "1px solid var(--border)", padding: "2.5rem", borderRadius: "16px", background: "white" }}>
@@ -181,10 +181,10 @@ export default function StPetersburg() {
       {/* 6. PERMIT DEEP DIVE */}
       <section className="section">
          <div className="container">
-            <div style={{ textAlign: "center", marginBottom: "4rem" }}>
-               <h2>5. Pinellas County & St. Pete Permit Mastery</h2>
-               <p style={{ maxWidth: "800px", margin: "0 auto" }}>The City of St. Petersburg Building Department and Pinellas County have strict, overlapping codes. We handle the entire bureaucratic process.</p>
-            </div>
+             <div style={{ textAlign: "center", marginBottom: "4rem" }}>
+                <h2>5. Pinellas County & St. Pete Permit Mastery</h2>
+                <p style={{ maxWidth: "800px", margin: "0 auto" }}>The City of St. Petersburg Building Department and Pinellas County have strict, overlapping codes. We handle the entire bureaucratic process, including managing the key differences of <Link href="/full-vs-partial-pool-removal" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>full structural extraction vs. partial abandonment</Link>.</p>
+             </div>
             <div className="grid grid-cols-3 gap-8">
                <div style={{ padding: "2rem", border: "1px solid var(--border)", borderRadius: "12px" }}>
                   <ShieldCheck size={32} color="var(--secondary)" style={{ marginBottom: "1rem" }} />
@@ -211,7 +211,7 @@ export default function StPetersburg() {
             <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
                <h2 style={{ fontSize: "2.2rem", marginBottom: "1.5rem" }}>8. The Critical Final Step: Pinellas Permit Closeout</h2>
                <p style={{ fontSize: "1.1rem", lineHeight: 1.8 }}>
-                  In St. Petersburg, a pool removal is not complete when the grass is planted; it is complete when the **Certificate of Completion** is issued by the building department. Many "Chuck-in-a-truck" contractors leave permits open, which can block the sale of your home years later or lead to massive daily fines.
+                  In St. Petersburg, a pool removal is not complete when the grass is planted; it is complete when the **Certificate of Completion** is issued by the building department. Many "Chuck-in-a-truck" contractors leave permits open, which can block the sale of your home years later or lead to massive daily fines, coordinating similar compliance protocols with adjacent service hubs like <Link href="/tampa-service-areas/clearwater" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Clearwater</Link>.
                   <br /><br />
                   We provide a comprehensive **Closeout Package** for every St. Pete project, including:
                </p>

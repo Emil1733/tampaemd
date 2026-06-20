@@ -74,12 +74,12 @@ export default function BrandonPage() {
             </div>
             <h1>Brandon Pool Removal & Suburban Lot Clearing Specialists</h1>
             <p style={{ fontSize: "1.25rem", color: "var(--text-main)", lineHeight: 1.8, marginBottom: "2rem" }}>
-              Brandon is no longer the "small town" it was in the 1970s. As properties age and maintenance costs soar, Brandon homeowners are reclaiming their backyards for modern outdoor living. We provide the engineered demolition and hydrological expertise required for Brandon’s unique soil and water conditions.
+              Brandon is no longer the "small town" it was in the 1970s. As properties age and maintenance costs soar, Brandon homeowners are reclaiming their backyards for modern outdoor living. We provide the <Link href="/resources/soil-stabilization-backfill" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>engineered demolition</Link> and hydrological expertise required for Brandon’s unique soil and water conditions.
             </p>
             <div className="trust-item" style={{ marginBottom: "2rem", background: "rgba(0,180,216,0.05)", padding: "2rem", borderRadius: "var(--radius-lg)", borderLeft: "4px solid var(--primary)" }}>
               <h4 style={{ margin: "0 0 0.5rem", fontSize: "1.1rem" }}>Hillsborough County Regulatory Warning</h4>
               <p style={{ margin: 0, fontSize: "0.95rem", color: "var(--text-muted)" }}>
-                Brandon properties falling within the **Alafia River Basin** are subject to specific "Critical Area" drainage codes. We ensure your pool removal is 100% compliant with Hillsborough County building ordinance #4.01.02.
+                Brandon properties falling within the **Alafia River Basin** are subject to specific "Critical Area" drainage codes. We ensure your pool removal is 100% compliant with <Link href="/resources/hillsborough-pool-permits" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Hillsborough County building codes</Link>.
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function BrandonPage() {
           <div style={{ maxWidth: "900px", margin: "0 auto" }}>
             <h2 style={{ fontSize: "2.5rem", marginBottom: "2rem" }}>1. The Alafia Watershed: Brandon’s Unique Hydrology</h2>
             <p style={{ fontSize: "1.1rem", lineHeight: 1.9, marginBottom: "2rem" }}>
-              Unlike the coastal sand of Clearwater, Brandon sits on a complex mixture of silty sand and clay pockets, largely influenced by the Alafia River watershed. This geography means the water table can be "perched"—meaning water gets trapped in upper layers of soil rather than draining deep.
+              Unlike the coastal sand of <Link href="/tampa-service-areas/clearwater" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Clearwater</Link>, Brandon sits on a complex mixture of silty sand and clay pockets, largely influenced by the Alafia River watershed. This geography means the water table can be "perched"—meaning water gets trapped in upper layers of soil rather than draining deep. Learn about these effects in our <Link href="/blog/high-water-table-issues" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>high water table guide</Link>.
             </p>
             <div className="grid grid-cols-2 gap-8 mb-12">
               <div className="glass-card" style={{ padding: "2.5rem" }}>
@@ -208,7 +208,7 @@ export default function BrandonPage() {
                         </div>
                         <div style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "1rem" }}>
                            <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--accent)" }}>98.2%</div>
-                           <div style={{ fontSize: "0.85rem", opacity: 0.8 }}>Modified Proctor Density (Exceeding Hillsborough County Building Code)</div>
+                           <div style={{ fontSize: "0.85rem", opacity: 0.8 }}>Modified Proctor Density (Exceeding Hillsborough County Building Code; certified for <Link href="/blog/building-after-pool-removal" style={{ color: 'var(--accent)', fontWeight: 600, textDecoration: 'underline' }}>ADU building</Link>)</div>
                         </div>
                         <div style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "1rem" }}>
                            <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--accent)" }}>$620</div>
@@ -230,7 +230,7 @@ export default function BrandonPage() {
             <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
                <h2 style={{ fontSize: "2.2rem", textAlign: "center", marginBottom: "3rem" }}>4. Engineered Compaction: The Brandon Gold Standard</h2>
                <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "3rem", textAlign: "center" }}>
-                  A pool hole is more than 150 cubic yards of volume. If you just fill it with "dirt," your yard will settle for 10 years. We achieve **95% Proctor Density** through a rigorous lift-based compaction process.
+                  A pool hole is more than 150 cubic yards of volume. If you just fill it with "dirt," your yard will settle for 10 years. We achieve **95% Proctor Density** through a rigorous lift-based compaction process, matching the methods analyzed in our <Link href="/full-vs-partial-pool-removal" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>full vs partial comparison guide</Link>.
                </p>
                <div className="grid grid-cols-2 gap-12">
                   <div style={{ border: "1px solid var(--border)", padding: "2.5rem", borderRadius: "16px", background: "white" }}>
@@ -251,7 +251,7 @@ export default function BrandonPage() {
          <div className="container">
             <div style={{ textAlign: "center", marginBottom: "4rem" }}>
                <h2>5. Hillsborough County Permit Navigation</h2>
-               <p style={{ maxWidth: "800px", margin: "0 auto" }}>The Hillsborough County Building Department can be complex. We handle the entire process so you don't have to.</p>
+               <p style={{ maxWidth: "800px", margin: "0 auto" }}>The Hillsborough County Building Department can be complex. We handle the entire process according to the latest <Link href="/resources/hillsborough-pool-permits" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Hillsborough County permit rules</Link> so you don't have to.</p>
             </div>
             <div className="grid grid-cols-3 gap-8">
                <div style={{ padding: "2rem", border: "1px solid var(--border)", borderRadius: "12px" }}>
@@ -279,7 +279,7 @@ export default function BrandonPage() {
             <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
                <h2 style={{ fontSize: "2.2rem", marginBottom: "1.5rem" }}>8. Waterfront Specialization: The Brandon Bypass Canal</h2>
                <p style={{ fontSize: "1.1rem", lineHeight: 1.8 }}>
-                  For properties backing onto the **Brandon Bypass Canal** or the **Alafia River**, pool removal involves extreme dewatering challenges. The lateral pressure from the canal can cause the pool excavation walls to "slough" or collapse if the water table isn't lowered with precision.
+                  For properties backing onto the **Brandon Bypass Canal** or the **Alafia River**, pool removal involves extreme dewatering challenges. The lateral pressure from the canal can cause the pool excavation walls to "slough" or collapse if the water table isn't lowered with precision. Read about these aquifer controls in our <Link href="/resources/high-water-table-dewatering" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>dewatering specifications guide</Link>.
                   <br /><br />
                   We coordinate with **SWFWMD** when necessary to ensure that our dewatering discharge does not contribute to local canal turbidity. Our waterfront stabilization plan includes specific **Turbidity Curtains** and **Sediment Traps** to protect the local ecosystem while we work.
                </p>
@@ -392,7 +392,7 @@ export default function BrandonPage() {
                <div>
                   <h3 style={{ fontSize: "1.8rem", marginBottom: "1.5rem" }}>Hillsborough County Regulatory Appendix</h3>
                   <p style={{ fontSize: "0.95rem", lineHeight: 1.8, color: "var(--text-main)" }}>
-                     In the Brandon/Valrico area, pool removal is governed by the **Hillsborough County Land Development Code (LDC)**. A critical nuance for older Brandon properties is the presence of decommissioned septic systems. If a pool is located within the 'Drainage Easement' of an old system, specific county health department clearances are required before demolition can begin.
+                     In the Brandon/Valrico area, pool removal is governed by the **Hillsborough County Land Development Code (LDC)**. Read our guide on <Link href="/resources/hillsborough-pool-permits" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Hillsborough County pool permits</Link> for details. A critical nuance for older Brandon properties is the presence of decommissioned septic systems. If a pool is located within the 'Drainage Easement' of an old system, specific county health department clearances are required before demolition can begin.
                      <br /><br />
                      Our team manages the 'Full Extraction' permitting process, which includes the mandatory **As-Built Survey** and the **Final Compaction Affidavit**. This level of documentation is essential for homeowners in neighborhoods like Bloomingdale, where property appraisers strictly monitor lot improvements. By closing out the permit with a certified engineering report, we ensure your property title remains unencumbered for future real estate transactions.
                   </p>
@@ -402,7 +402,7 @@ export default function BrandonPage() {
                   <p style={{ fontSize: "0.95rem", lineHeight: 1.8, color: "var(--text-main)" }}>
                      The soil profile in East Hillsborough is primarily composed of **Candler Fine Sand** interspersed with **Zolfo and Seffner fine sands**. These soils are categorized as 'Well-Drained,' but they often contain 'Hardpan' clay layers at depths of 6 to 10 feet. 
                      <br /><br />
-                     During a pool removal in Brandon, these clay lenses can cause 'Perched Water Tables,' where rainwater remains trapped around the pool shell instead of draining away. We utilize **Sub-Surface Drainage Channeling** during the backfill phase to ensure that your new yard doesn't become a basin for local runoff. This technical approach preserves the structural integrity of your home's foundation and prevents the 'Muck' pockets common in unprofessional fill-in projects.
+                     During a pool removal in Brandon, these clay lenses can cause 'Perched Water Tables,' where rainwater remains trapped around the pool shell instead of draining away. We utilize **Sub-Surface Drainage Channeling** during the backfill phase to ensure that your new yard doesn't become a basin for local runoff, using methods detailed in our <Link href="/resources/soil-stabilization-backfill" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>soil stabilization guide</Link>. This technical approach preserves the structural integrity of your home's foundation and prevents the 'Muck' pockets common in unprofessional fill-in projects.
                   </p>
                </div>
             </div>

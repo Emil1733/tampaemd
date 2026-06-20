@@ -128,7 +128,7 @@ export default function MethodologyComparison() {
               <div>
                  <h2 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>2. The "Sink-Risk" Variable: Why Compaction Matters</h2>
                  <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "2rem" }}>
-                    In Tampa's sandy soil, air pockets are the enemy of stability. When a pool is removed, the void must be filled with surgical precision to prevent future settlement.
+                    In Tampa's sandy soil, air pockets are the enemy of stability. When a pool is removed, the void must be filled in accordance with <Link href="/resources/soil-stabilization-backfill" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>soil density stabilization rules</Link> with surgical precision to prevent future settlement.
                  </p>
                  <div className="grid grid-cols-2 gap-6">
                     <div style={{ background: "white", padding: "1.5rem", borderRadius: "12px" }}>
@@ -167,12 +167,12 @@ export default function MethodologyComparison() {
                  <div className="glass-card" style={{ padding: "2.5rem", background: "var(--surface-alt)" }}>
                     <Info size={32} color="var(--primary)" style={{ marginBottom: "1.5rem" }} />
                     <h4>The Partial Disclosure Requirement</h4>
-                    <p style={{ fontSize: "0.9rem" }}>If you choose a partial removal, you must legally disclose that there is concrete and steel buried in your yard. This can deter buyers who plan to build ADUs or home additions, as their construction costs will skyrocket when they encounter your buried pool.</p>
+                    <p style={{ fontSize: "0.9rem" }}>If you choose a partial removal, you must legally disclose that there is concrete and steel buried in your yard. This can deter buyers who plan on <Link href="/blog/building-after-pool-removal" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>building a home addition or ADU over a filled pool</Link>, as their construction costs will skyrocket when they encounter your buried pool.</p>
                  </div>
                  <div className="glass-card" style={{ padding: "2.5rem", background: "var(--surface-alt)" }}>
                     <CheckCircle2 size={32} color="var(--primary)" style={{ marginBottom: "1.5rem" }} />
                     <h4>The Full Removal Dividend</h4>
-                    <p style={{ fontSize: "0.9rem" }}>A full removal entirely exclaims the pool from the property's history. With a certified compaction report, you can sell your home as "Build-Ready," which is a significant premium in neighborhoods like South Tampa and St. Pete.</p>
+                    <p style={{ fontSize: "0.9rem" }}>A full removal entirely exclaims the pool from the property's history. With a certified compaction report, you can sell your home as "Build-Ready," which is a significant premium for <Link href="/tampa-service-areas/south-tampa" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>demolition in high-density areas like South Tampa</Link> and <Link href="/tampa-service-areas/st-petersburg" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>St. Petersburg</Link>.</p>
                  </div>
               </div>
            </div>

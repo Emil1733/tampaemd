@@ -66,7 +66,7 @@ export default function DewateringResource() {
                   The "Hydrostatic Pop" Threat
                </h3>
                <p style={{ fontSize: "1rem", lineHeight: 1.7, margin: 0 }}>
-                  A swimming pool is essentially a concrete boat. When the shell is emptied, the weight of the water inside (often over 150,000 lbs) is gone, but the pressure from the surrounding groundwater (hydrostatic pressure) remains. In high-water areas like **Davis Islands** or **St. Pete Beach**, this pressure can literally "pop" the pool out of the ground, destroying plumbing, foundations, and seawalls in a matter of seconds.
+                  A swimming pool is essentially a concrete boat. When the shell is emptied, the weight of the water inside (often over 150,000 lbs) is gone, but the pressure from the surrounding groundwater (hydrostatic pressure) remains. In high-water areas like **Davis Islands** or **St. Pete Beach**, this pressure can literally "pop" the pool out of the ground—see our <Link href="/blog/high-water-table-issues" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>groundwater table float risk details</Link>—destroying plumbing, foundations, and seawalls in a matter of seconds.
                </p>
             </div>
           </div>

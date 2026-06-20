@@ -73,7 +73,7 @@ export default function PoolRemovalCost() {
           <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
             <h2 style={{ fontSize: "2.5rem", marginBottom: "2rem", textAlign: "center" }}>1. The Three Tiers of Tampa Pool Demolition</h2>
             <p style={{ fontSize: "1.1rem", lineHeight: 1.9, marginBottom: "3rem", textAlign: "center" }}>
-              The cost of your project is primarily determined by the "Method of Abandonment." Each tier offers a different level of future land utility.
+              The cost of your project is primarily determined by the <Link href="/full-vs-partial-pool-removal" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>demolition method chosen</Link>. Each tier offers a different level of future land utility.
             </p>
             <div className="grid grid-cols-3 gap-8">
                <div className="glass-card" style={{ padding: "2.5rem" }}>
@@ -107,10 +107,10 @@ export default function PoolRemovalCost() {
         <div className="container">
            <div className="grid grid-cols-2 gap-16 items-center">
               <div>
-                 <h2 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>2. Cost Driver #1: Access & Logistics</h2>
-                 <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "2rem" }}>
-                    In older Tampa neighborhoods like **South Tampa** or **Seminole Heights**, the primary cost driver isn't the pool—it's how we get to it.
-                 </p>
+                  <h2 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>2. Cost Driver #1: Access & Logistics</h2>
+                  <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "2rem" }}>
+                     In older Tampa neighborhoods like **South Tampa** or **Seminole Heights**, the primary cost driver isn't the pool—it's how we get to it. This differs significantly from the <Link href="/tampa-service-areas/wesley-chapel" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>regional pricing variances in Wesley Chapel</Link> where properties typically offer wider clearance.
+                  </p>
                  <div className="grid grid-cols-2 gap-6">
                     <div style={{ background: "white", padding: "1.5rem", borderRadius: "12px" }}>
                        <Target size={24} color="var(--primary)" style={{ marginBottom: "0.5rem" }} />
@@ -119,8 +119,8 @@ export default function PoolRemovalCost() {
                     </div>
                     <div style={{ background: "white", padding: "1.5rem", borderRadius: "12px" }}>
                        <ShieldCheck size={24} color="var(--primary)" style={{ marginBottom: "0.5rem" }} />
-                       <h5 style={{ margin: 0 }}>Utility Capping</h5>
-                       <p style={{ fontSize: "0.8rem", margin: "0.5rem 0 0" }}>Professional gas and electrical termination in older homes requires licensed master-tradesmen, typically a $500–$1,200 variable.</p>
+                        <h5 style={{ margin: 0 }}>Utility Capping</h5>
+                        <p style={{ fontSize: "0.8rem", margin: "0.5rem 0 0" }}>Professional gas and electrical termination in older homes requires licensed master-tradesmen, typically a $500–$1,200 variable, in addition to <Link href="/blog/do-you-need-a-permit-in-tampa" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>municipal permit fee variations</Link>.</p>
                     </div>
                  </div>
               </div>

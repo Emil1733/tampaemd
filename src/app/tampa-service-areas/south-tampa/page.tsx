@@ -73,7 +73,7 @@ export default function SouthTampa() {
             </div>
             <h1>South Tampa Pool Removal & Tight-Access Demolition</h1>
             <p style={{ fontSize: "1.25rem", color: "var(--text-main)", lineHeight: 1.8, marginBottom: "2rem" }}>
-              South Tampa's high property values and tight-access lots require a surgical approach to pool demolition. We specialize in the complex hydrological and structural engineering required to reclaim your yard for modern luxury living—from Hyde Park to Ballast Point.
+              South Tampa's high property values and tight-access lots require a surgical approach to pool demolition. We specialize in the complex hydrological and structural engineering required in accordance with <Link href="/resources/hillsborough-pool-permits" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Hillsborough County permit guidelines</Link> to reclaim your yard for modern luxury living—from Hyde Park to Ballast Point.
             </p>
             <div style={{ display: "flex", gap: "1rem" }}>
                <Link href="/contact" className="btn btn-primary">Request Your South Tampa Audit</Link>
@@ -131,7 +131,7 @@ export default function SouthTampa() {
             <div style={{ order: 2 }}>
                <h2 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>2. Surgical Logistics: The Tight-Access Specialist</h2>
                <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "2.5rem" }}>
-                  In neighborhoods like **Virginia Park** and **Palma Ceia**, lot lines are tight. We utilize specialized, high-torque mini-excavators that can fit through a standard 36-inch gate, protecting your landscaping and structures.
+                  In neighborhoods like **Virginia Park** and **Palma Ceia**, lot lines are tight. We utilize specialized, high-torque mini-excavators that can fit through a standard 36-inch gate, protecting your landscaping and structures, coordinating similar tight-access deployments with nearby nodes like <Link href="/tampa-service-areas/carrollwood" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Carrollwood</Link> and <Link href="/tampa-service-areas/riverview" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Riverview</Link>.
                </p>
                <div className="grid grid-cols-2 gap-8">
                   <div style={{ display: "flex", gap: "1rem" }}>
@@ -193,7 +193,7 @@ export default function SouthTampa() {
             <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
                  <h2 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>3. City of Tampa Permit Mastery</h2>
                  <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "3rem" }}>
-                    The City of Tampa Building Department maintains strict standards for pool \"Abandonment\" vs. \"Full Extraction.\" We manage the entire administrative cycle, ensuring your project meets all modern code requirements.
+                    The City of Tampa Building Department maintains strict standards for pool \"Abandonment\" vs. \"Full Extraction.\" We manage the entire administrative cycle, guiding you through the differences in <Link href="/full-vs-partial-pool-removal" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>full structural removal vs. partial abandonment</Link> and ensuring your project meets all modern code requirements.
                  </p>
                  <div className="grid grid-cols-2 gap-12 text-left">
                     <div className="glass-card" style={{ padding: "2.5rem" }}>
@@ -271,7 +271,7 @@ export default function SouthTampa() {
                         </div>
                         <div style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "1rem" }}>
                            <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--accent)" }}>98%</div>
-                           <div style={{ fontSize: "0.85rem", opacity: 0.8 }}>Modified Proctor Density (Certified Build-Ready for new ADU)</div>
+                           <div style={{ fontSize: "0.85rem", opacity: 0.8 }}>Modified Proctor Density (Certified Build-Ready for <Link href="/blog/building-after-pool-removal" style={{ color: 'var(--accent)', fontWeight: 600, textDecoration: 'underline' }}>new ADU</Link> or home additions)</div>
                         </div>
                         <div style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "1rem" }}>
                            <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--accent)" }}>0.0 mm</div>
@@ -342,7 +342,7 @@ export default function SouthTampa() {
                <div>
                   <h3 style={{ fontSize: "1.8rem", marginBottom: "1.5rem" }}>City of Tampa Regulatory Compliance Appendix</h3>
                   <p style={{ fontSize: "0.95rem", lineHeight: 1.8, color: "var(--text-main)" }}>
-                     In the City of Tampa, pool demolition is governed by **Chapter 5, Article VII of the Municipal Code**. Unlike neighboring jurisdictions, Tampa distinguishes strictly between 'Partial Abandonment' (filling in a shell) and 'Full Engineered Removal.' 
+                     In the City of Tampa, pool demolition is governed by **Chapter 5, Article VII of the Municipal Code**. Read our guide on <Link href="/resources/hillsborough-pool-permits" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Hillsborough County pool permits</Link> for direct assistance.
                      <br /><br />
                      For residential properties in South Tampa, specifically within the **33606, 33629, and 33611** zip codes, we recommend the 'Full Extraction' method. This involves the removal of the entire gunite shell, plumbing, and electrical bond beam. This is the only method that allows for the legal construction of permanent structures (ADUs, additions, or luxury patios) over the old pool footprint. Our documentation package includes the mandatory 'Soil Compaction Certificate' and the final City of Tampa building inspector sign-off, ensuring your property's value is legally protected for future appraisal.
                   </p>
@@ -350,7 +350,7 @@ export default function SouthTampa() {
                <div>
                   <h3 style={{ fontSize: "1.8rem", marginBottom: "1.5rem" }}>South Tampa Geological Stratigraphy</h3>
                   <p style={{ fontSize: "0.95rem", lineHeight: 1.8, color: "var(--text-main)" }}>
-                     The soil profile in South Tampa is primarily composed of **Myakka Fine Sand** and **Bayshore Silts**. While excellent for drainage, these soils become highly unstable when saturated by the high water tables typical of the Interbay Peninsula. 
+                     The soil profile in South Tampa is primarily composed of **Myakka Fine Sand** and **Bayshore Silts**. While excellent for drainage, these soils become highly unstable when saturated by the high water tables typical of the Interbay Peninsula. Learn how this is managed during demolition in our guide on <Link href="/blog/high-water-table-issues" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>high water table issues</Link>.
                      <br /><br />
                      Our engineering team utilizes a **Pressure-Relief Protocol** during the excavation phase. By drilling relief holes into the base of the pool shell before total extraction, we prevent the 'Hydrostatic Piston Effect,' where trapped groundwater pressure can actually propel a pool shell upward, causing catastrophic damage to adjacent structures. This technical precision is what separates an engineered demolition from a standard 'dig and fill' project.
                   </p>

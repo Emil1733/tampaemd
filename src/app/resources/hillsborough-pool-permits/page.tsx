@@ -57,7 +57,7 @@ export default function HillsboroughPermits() {
             </div>
             <h1>Hillsborough County Pool Removal Permits: The Master Guide</h1>
             <p style={{ fontSize: "1.25rem", lineHeight: 1.8, marginBottom: "2rem", color: "var(--text-main)" }}>
-                In Hillsborough County, a swimming pool is not just a hole in the ground; it is a legally recorded structure. Removing one requires more than just an excavator; it requires a systematic legal process to ensure the "Abandonment" is performed according to **Florida Building Code** and local municipal ordinances.
+                In Hillsborough County, a swimming pool is not just a hole in the ground; it is a legally recorded structure. Removing one requires more than just an excavator; it requires a systematic legal process in accordance with the general <Link href="/blog/do-you-need-a-permit-in-tampa" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Florida pool demolition permitting overview</Link> to ensure the "Abandonment" is performed according to **Florida Building Code** and local municipal ordinances.
             </p>
 
             <div style={{ background: "rgba(0,180,216,0.05)", padding: "2.5rem", borderRadius: "var(--radius-lg)", borderLeft: "4px solid var(--primary)", marginBottom: "3rem" }}>

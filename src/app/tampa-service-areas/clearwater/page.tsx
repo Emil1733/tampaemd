@@ -74,12 +74,12 @@ export default function Clearwater() {
             </div>
             <h1>Clearwater Pool Removal: High-Authority Property Reclamation</h1>
             <p style={{ fontSize: "1.25rem", color: "var(--text-main)", lineHeight: 1.8, marginBottom: "2rem" }}>
-              Clearwater is a city of diverse topographies, from the "sugar-sand" beaches of the Gulf to the rolling clay hills of **Countryside**. As property values in North Pinellas continue to climb, homeowners are trading high-maintenance pools for high-value outdoor living. We provide the coastal engineering and hydrological expertise required for Clearwater’s unique environment.
+              Clearwater is a city of diverse topographies, from the "sugar-sand" beaches of the Gulf to the rolling clay hills of **Countryside**. As property values in North Pinellas continue to climb, homeowners are trading high-maintenance pools for high-value outdoor living. We coordinate all local filings in accordance with <Link href="/resources/pinellas-pool-permits" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Pinellas County permit guidelines</Link>, and manage the complex coastal engineering and hydrological expertise required for Clearwater’s unique environment.
             </p>
             <div className="trust-item" style={{ marginBottom: "2rem", background: "rgba(0,180,216,0.05)", padding: "2rem", borderRadius: "var(--radius-lg)", borderLeft: "4px solid var(--primary)" }}>
               <h4 style={{ margin: "0 0 0.5rem", fontSize: "1.1rem" }}>Coastal Engineering Alert</h4>
               <p style={{ margin: 0, fontSize: "0.95rem", color: "var(--text-muted)" }}>
-                Clearwater properties near the Intracoastal or Gulf face extreme **Tidal Buoyancy** risks. Removing a pool shell in **Island Estates** or **Sand Key** requires a synchronized dewatering and backfill plan to prevent site destabilization.
+                Clearwater properties near the Intracoastal or Gulf face extreme **Tidal Buoyancy** risks. Removing a pool shell in **Island Estates** or **Sand Key** requires a synchronized <Link href="/resources/high-water-table-dewatering" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>well-point dewatering</Link> and <Link href="/resources/soil-stabilization-backfill" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>engineered backfill compaction</Link> plan to prevent site destabilization.
               </p>
             </div>
           </div>
@@ -143,9 +143,9 @@ export default function Clearwater() {
            <div className="grid grid-cols-2 gap-16 items-center">
               <div>
                  <h2 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>3. Pinellas County Permit Mastery</h2>
-                 <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "2rem" }}>
-                    The **Pinellas County Building Department** has specific requirements for pool abandonment that differ from Hillsborough. We handle the entire bureaucratic cycle to ensure your project is 100% legal and your property title remains clear.
-                 </p>
+                  <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "2rem" }}>
+                     The **Pinellas County Building Department** has specific requirements for pool abandonment that differ from Hillsborough. We handle the entire bureaucratic cycle to ensure your project is 100% legal and your property title remains clear, managing the key technical differences between <Link href="/full-vs-partial-pool-removal" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>full structural extraction vs. partial abandonment</Link>.
+                  </p>
                  <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "1.5rem" }}>
                     <li style={{ display: "flex", gap: "1rem" }}>
                        <Target size={24} color="var(--secondary)" />
@@ -252,7 +252,7 @@ export default function Clearwater() {
             <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
                <h2 style={{ fontSize: "2.2rem", marginBottom: "1.5rem" }}>7. Navigating North Pinellas Regulatory Complexity</h2>
                <p style={{ fontSize: "1.1rem", lineHeight: 1.8 }}>
-                  Clearwater residents are subject to overlapping jurisdictions between the **City of Clearwater** and **Pinellas County**. This is especially true for properties in unincorporated areas like **Countryside** or **Belleair Bluffs**. We handle the "Inter-Agency Coordination" required to ensure your pool removal is recognized by both tax and building authorities.
+                  Clearwater residents are subject to overlapping jurisdictions between the **City of Clearwater** and **Pinellas County**. This is especially true for properties in unincorporated areas like **Countryside** or **Belleair Bluffs**. We handle the "Inter-Agency Coordination" required to ensure your pool removal is recognized by both tax and building authorities, coordinating similar coastal projects with neighboring <Link href="/tampa-service-areas/st-petersburg" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>St. Petersburg</Link>.
                   <br /><br />
                   One critical Clearwater-specific rule is the **Stormwater Attenuation Requirement**. When a 450 sq ft pool is replaced by 450 sq ft of earth, the drainage profile of your property changes. We ensure your new grade matches the city's master drainage plan, preventing "ponding" in your or your neighbor's yard.
                </p>
@@ -267,7 +267,7 @@ export default function Clearwater() {
                <div>
                   <h2 style={{ fontSize: "2.2rem", marginBottom: "1.5rem" }}>8. Preparing for Luxury Hardscaping</h2>
                   <p style={{ fontSize: "1.1rem", lineHeight: 1.8 }}>
-                     Many of our Clearwater clients remove their pools to make room for **high-end travertine patios** or **outdoor pavilion structures**. These heavy materials require a sub-surface that is significantly more stable than a standard yard.
+                     Many of our Clearwater clients remove their pools to make room for **high-end travertine patios** or **outdoor pavilion structures**, keeping a close eye on the <Link href="/pool-removal-cost-tampa" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>pool removal cost breakdown</Link> to maximize their return on investment. These heavy materials require a sub-surface that is significantly more stable than a standard yard.
                      <br /><br />
                      Our engineered backfill process includes a **"Static Load Bearing" certification**. This means that once we are done, your mason or patio contractor can install heavy stone or concrete pavers immediately without fear of the ground settling and cracking the new work.
                   </p>

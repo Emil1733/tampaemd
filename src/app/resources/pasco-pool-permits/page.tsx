@@ -57,7 +57,7 @@ export default function PascoPermits() {
             </div>
             <h1>Pasco County Pool Removal Permits: The Master Guide</h1>
             <p style={{ fontSize: "1.25rem", lineHeight: 1.8, marginBottom: "2rem", color: "var(--text-main)" }}>
-                In Pasco County, a swimming pool is legally classified as a "Permanent Structural Improvement." Removing one is not a simple landscaping project; it is a regulated demolition process overseen by **Pasco County Building Construction Services**. For homeowners in **Wesley Chapel**, **Land O' Lakes**, and **New Port Richey**, compliance is the only way to protect your property title.
+                In Pasco County, a swimming pool is legally classified as a "Permanent Structural Improvement." Removing one is not a simple landscaping project; it is a regulated demolition process in accordance with the general <Link href="/blog/do-you-need-a-permit-in-tampa" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Florida pool demolition permitting overview</Link> overseen by **Pasco County Building Construction Services**. For homeowners in **Wesley Chapel**, **Land O' Lakes**, and **New Port Richey**, compliance is the only way to protect your property title.
             </p>
 
             <div style={{ background: "rgba(0,180,216,0.05)", padding: "2.5rem", borderRadius: "var(--radius-lg)", borderLeft: "4px solid var(--primary)", marginBottom: "3rem" }}>

@@ -57,7 +57,7 @@ export default function PinellasPermits() {
             </div>
             <h1>Pinellas County Pool Removal Permits: The Master Guide</h1>
             <p style={{ fontSize: "1.25rem", lineHeight: 1.8, marginBottom: "2rem", color: "var(--text-main)" }}>
-                Pinellas County is Florida's most densely populated county, making every square foot of land a valuable asset. However, this density comes with some of the state's most complex building and environmental codes. For homeowners in **St. Petersburg**, **Clearwater**, and **Largo**, removing a pool is a multi-jurisdictional legal process that requires expert navigation.
+                Pinellas County is Florida's most densely populated county, making every square foot of land a valuable asset. However, this density comes with some of the state's most complex building and environmental codes. For homeowners in **St. Petersburg**, **Clearwater**, and **Largo**, removing a pool is a multi-jurisdictional legal process in accordance with the general <Link href="/blog/do-you-need-a-permit-in-tampa" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Florida pool demolition permitting overview</Link> that requires expert navigation.
             </p>
 
             <div style={{ background: "rgba(0,180,216,0.05)", padding: "2.5rem", borderRadius: "var(--radius-lg)", borderLeft: "4px solid var(--primary)", marginBottom: "3rem" }}>

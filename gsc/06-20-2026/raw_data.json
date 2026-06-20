@@ -1,0 +1,225 @@
+{
+  "current": {
+    "period": "2026-05-21 to 2026-06-19",
+    "label": "current",
+    "queries": [
+      {
+        "keys": [
+          "pool removal tampa"
+        ],
+        "clicks": 1,
+        "impressions": 33,
+        "ctr": 0.030303030303030304,
+        "position": 12.424242424242424
+      },
+      {
+        "keys": [
+          "coastal"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 2
+      },
+      {
+        "keys": [
+          "inground pool removal contractors near me"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "inground pool removal near me"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "pool demolition"
+        ],
+        "clicks": 0,
+        "impressions": 30,
+        "ctr": 0,
+        "position": 22.966666666666665
+      },
+      {
+        "keys": [
+          "pool demolition altamonte springs"
+        ],
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0,
+        "position": 66.6842105263158
+      },
+      {
+        "keys": [
+          "pool demolition contractors"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "pool demolition tampa"
+        ],
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 9.285714285714286
+      },
+      {
+        "keys": [
+          "pool removal"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "pool removal berkeley"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 41
+      }
+    ],
+    "pages": [
+      {
+        "keys": [
+          "https://poolremovaltampa.com/"
+        ],
+        "clicks": 1,
+        "impressions": 98,
+        "ctr": 0.01020408163265306,
+        "position": 25.622448979591837
+      },
+      {
+        "keys": [
+          "https://poolremovaltampa.com/tampa-service-areas/brandon"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 56
+      },
+      {
+        "keys": [
+          "https://poolremovaltampa.com/tampa-service-areas/clearwater"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 32.83333333333333
+      },
+      {
+        "keys": [
+          "https://poolremovaltampa.com/tampa-service-areas/st-petersburg"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      }
+    ]
+  },
+  "previous": {
+    "period": "2026-04-21 to 2026-05-20",
+    "label": "previous",
+    "queries": [
+      {
+        "keys": [
+          "inground pool demolition near me"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "pool demolition"
+        ],
+        "clicks": 0,
+        "impressions": 45,
+        "ctr": 0,
+        "position": 16
+      },
+      {
+        "keys": [
+          "pool demolition altamonte springs"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 81.33333333333333
+      },
+      {
+        "keys": [
+          "pool demolition north oaks"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 50
+      },
+      {
+        "keys": [
+          "pool demolition tampa"
+        ],
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0,
+        "position": 20.94736842105263
+      },
+      {
+        "keys": [
+          "pool removal tampa"
+        ],
+        "clicks": 0,
+        "impressions": 31,
+        "ctr": 0,
+        "position": 16.70967741935484
+      }
+    ],
+    "pages": [
+      {
+        "keys": [
+          "https://poolremovaltampa.com/"
+        ],
+        "clicks": 0,
+        "impressions": 98,
+        "ctr": 0,
+        "position": 19.612244897959183
+      },
+      {
+        "keys": [
+          "https://poolremovaltampa.com/tampa-service-areas/clearwater"
+        ],
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0,
+        "position": 45.625
+      },
+      {
+        "keys": [
+          "https://poolremovaltampa.com/tampa-service-areas/st-petersburg"
+        ],
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 45.7
+      }
+    ]
+  }
+}
