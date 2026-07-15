@@ -50,7 +50,9 @@ The contextual internal linking system has successfully redistributed domain aut
    * Created an authority-grade blog post: [src/app/blog/wesley-chapel-compaction-rules/page.tsx](file:///c:/Users/tevat/tampaemd/src/app/blog/wesley-chapel-compaction-rules/page.tsx) covering structural compaction standards, Modified Proctor testing, clean A-3 silica specifications, and Dynamic Cone Penetrometer testing.
    * Registered the new blog post in [src/app/blog/page.tsx](file:///c:/Users/tevat/tampaemd/src/app/blog/page.tsx) and [src/app/sitemap.ts](file:///c:/Users/tevat/tampaemd/src/app/sitemap.ts).
 
-3. **Technical Validation:**
+3. **Technical Validation & Schema Auditing:**
+   * Audited site-wide structured data. Verified that **100% of routing pages** contain page-specific JSON-LD schema objects (`FAQPage` or `ContactPage`) nested inside a global `LocalBusiness` layout schema.
+   * Added custom schemas to [src/app/resources/page.tsx](file:///c:/Users/tevat/tampaemd/src/app/resources/page.tsx) and [src/app/contact/page.tsx](file:///c:/Users/tevat/tampaemd/src/app/contact/page.tsx).
    * Compiled the app successfully using `npx tsc --noEmit`.
    * Staged, committed, and pushed all updates to `origin main`.
 
