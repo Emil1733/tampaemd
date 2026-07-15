@@ -44,7 +44,7 @@ export default function PascoPermits() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Breadcrumbs items={[
-        { name: "Resources", href: "/tampa-service-areas" },
+        { name: "Resources", href: "/resources" },
         { name: "Pasco Permits", href: "/resources/pasco-pool-permits" }
       ]} />
       {/* 1. HERO SECTION */}

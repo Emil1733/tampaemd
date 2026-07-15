@@ -44,7 +44,7 @@ export default function PinellasPermits() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Breadcrumbs items={[
-        { name: "Resources", href: "/tampa-service-areas" },
+        { name: "Resources", href: "/resources" },
         { name: "Pinellas Permits", href: "/resources/pinellas-pool-permits" }
       ]} />
       {/* 1. HERO SECTION */}

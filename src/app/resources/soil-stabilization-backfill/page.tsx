@@ -44,7 +44,7 @@ export default function SoilStabilization() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Breadcrumbs items={[
-        { name: "Resources", href: "/tampa-service-areas" },
+        { name: "Resources", href: "/resources" },
         { name: "Soil & Backfill", href: "/resources/soil-stabilization-backfill" }
       ]} />
       {/* HERO SECTION */}

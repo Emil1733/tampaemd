@@ -44,7 +44,7 @@ export default function DewateringResource() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Breadcrumbs items={[
-        { name: "Resources", href: "/tampa-service-areas" },
+        { name: "Resources", href: "/resources" },
         { name: "Dewatering", href: "/resources/high-water-table-dewatering" }
       ]} />
       {/* HERO SECTION */}

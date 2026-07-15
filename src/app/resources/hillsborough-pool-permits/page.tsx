@@ -44,7 +44,7 @@ export default function HillsboroughPermits() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Breadcrumbs items={[
-        { name: "Resources", href: "/tampa-service-areas" },
+        { name: "Resources", href: "/resources" },
         { name: "Hillsborough Permits", href: "/resources/hillsborough-pool-permits" }
       ]} />
       {/* 1. HERO SECTION */}

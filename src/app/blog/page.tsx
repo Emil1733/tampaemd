@@ -33,6 +33,11 @@ const posts = [
     title: "Can You Build an Addition After Pool Removal?",
     desc: "The critical differences in compaction needed if you intend to build a garage or home addition over an old pool cavity.",
     url: "/blog/building-after-pool-removal"
+  },
+  {
+    title: "Wesley Chapel Compaction & Permitting Rules",
+    desc: "A detailed engineering breakdown of Pasco County's building codes, soil specifications, and Modified Proctor testing guidelines for pool demolition.",
+    url: "/blog/wesley-chapel-compaction-rules"
   }
 ];
 
