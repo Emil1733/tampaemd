@@ -13,8 +13,31 @@ export const metadata: Metadata = {
 };
 
 export default function Contact() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Tampa Pool Removal & Demolition",
+    "description": "Get in touch with Tampa's premier pool removal and demolition specialists. Request a free geotechnical site audit and cost estimate.",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "Tampa Pool Removal & Demolition",
+      "telephone": "+18131234567",
+      "email": "info@poolremovaltampa.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tampa",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      }
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* 1. HERO SECTION */}
       <section className="hero bg-surface">
         <div className="container grid grid-cols-2 items-center gap-12">

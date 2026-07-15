@@ -51,8 +51,35 @@ export default function ResourcesIndex() {
     }
   ];
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What resource guides are available for pool removal in Tampa Bay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide detailed permitting manuals for Hillsborough, Pinellas, and Pasco counties, along with engineering guides for Florida high-water-table dewatering and soil stabilization."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a permit required for pool removal in all Tampa Bay counties?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Hillsborough, Pinellas, and Pasco counties all require residential demolition permits, engineered site plans, and P.E.-certified soil compaction reports."
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Breadcrumbs items={[
         { name: "Resources", href: "/resources" }
       ]} />
