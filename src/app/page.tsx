@@ -6,8 +6,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pool Removal Tampa, FL | Tampa Pool Removal & Demolition (2026)",
-  description: "Tampa's #1 authority in engineered pool removal. Specializing in high-water-table management, Proctor compaction, and land reclamation across Hillsborough, Pinellas, and Pasco counties.",
+  title: "Pool Removal Tampa, FL — Cost, Drainage & Permits",
+  description: "Pool removal in Tampa requires proper drainage and soil stabilization. Most projects range $9k–$18k. Get a fast estimate today.",
   alternates: {
     canonical: "/",
   },
@@ -59,9 +59,9 @@ export default function Home() {
               <ShieldCheck size={20} />
               <span>Tampa Bay's #1 Authority in Pool Demolition</span>
             </div>
-            <h1 style={{ fontSize: "3.5rem", lineHeight: 1.1, marginBottom: "1.5rem" }}>Engineered Pool Removal & Demolition in Tampa Bay</h1>
+            <h1 style={{ fontSize: "3.5rem", lineHeight: 1.1, marginBottom: "1.5rem" }}>Pool Removal Tampa, FL</h1>
             <p style={{ fontSize: '1.25rem', color: 'var(--text-main)', marginBottom: '2.5rem', lineHeight: 1.8 }}>
-              Florida pool removal is not a simple digging project. It is a complex hydrological and structural engineering task. We specialize in <Link href="/full-vs-partial-pool-removal" style={{ color: 'var(--primary)', fontWeight: 700, textDecoration: 'underline' }}>engineered extractions</Link> across <Link href="/resources/hillsborough-pool-permits" style={{ color: 'var(--text-main)', textDecoration: 'underline' }}>Hillsborough</Link>, <Link href="/resources/pinellas-pool-permits" style={{ color: 'var(--text-main)', textDecoration: 'underline' }}>Pinellas</Link>, and <Link href="/resources/pasco-pool-permits" style={{ color: 'var(--text-main)', textDecoration: 'underline' }}>Pasco</Link> counties—providing the <Link href="/resources/high-water-table-dewatering" style={{ color: 'var(--text-main)', textDecoration: 'underline' }}>certified dewatering</Link> and compaction expertise that protecting your property value requires.
+              Safe pool demolition with drainage control and water-table stabilization.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: "3rem" }}>
               <a href="#calculator" className="btn btn-primary" style={{ padding: "1rem 2.5rem" }}>
@@ -97,10 +97,9 @@ export default function Home() {
       {/* 2. TRUST BAR */}
       <div className="trust-bar" style={{ background: "var(--primary-dark)", padding: "2rem 0" }}>
         <div className="container trust-bar-items" style={{ justifyContent: "space-around" }}>
-          <div className="trust-item" style={{ color: "white" }}><CheckCircle size={18} color="var(--accent)" /> Licensed Demolition Contractor</div>
-          <div className="trust-item" style={{ color: "white" }}><CheckCircle size={18} color="var(--accent)" /> $2M Liability Coverage</div>
-          <div className="trust-item" style={{ color: "white" }}><CheckCircle size={18} color="var(--accent)" /> Certified Clean A-3 Fill</div>
-          <div className="trust-item" style={{ color: "white" }}><CheckCircle size={18} color="var(--accent)" /> 2026 Code Compliance</div>
+          <div className="trust-item" style={{ color: "white" }}><CheckCircle size={18} color="var(--accent)" /> Licensed & Insured in Florida</div>
+          <div className="trust-item" style={{ color: "white" }}><CheckCircle size={18} color="var(--accent)" /> Permit Handling Included</div>
+          <div className="trust-item" style={{ color: "white" }}><CheckCircle size={18} color="var(--accent)" /> Engineered Backfill</div>
         </div>
       </div>
 
@@ -112,7 +111,7 @@ export default function Home() {
               <div className="icon-box">
                 <Activity size={32} />
               </div>
-              <h2 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>1. The Science of the "Sinking Sand": Tampa's Unique Geology</h2>
+              <h2 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>Why Pool Removal in Tampa Requires Drainage Expertise</h2>
               <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "2rem" }}>
                 Most Tampa properties sit atop the **Florida Aquifer**, a massive underground reservoir that sits inches away from your pool shell in neighborhoods like <Link href="/tampa-service-areas/south-tampa" style={{ color: 'var(--primary)', fontWeight: 600 }}>South Tampa</Link>, <Link href="/tampa-service-areas/riverview" style={{ color: 'var(--primary)', fontWeight: 600 }}>Riverview</Link>, and <Link href="/tampa-service-areas/st-petersburg" style={{ color: 'var(--primary)', fontWeight: 600 }}>St. Pete</Link>. Removing a pool in these conditions is a battle against <Link href="/blog/high-water-table-issues" style={{ color: 'var(--secondary)', fontWeight: 700 }}>hydrostatic pressure</Link>.
               </p>
@@ -187,7 +186,7 @@ export default function Home() {
                   </p>
                </div>
                <div>
-                  <h2>Hillsborough Watershed Protection</h2>
+                  <h2>Tampa Pool Removal Permits & Regulations</h2>
                   <p style={{ fontSize: "1.1rem", lineHeight: 1.8 }}>
                      Whether your property is on the **Hillsborough River** or near the **Cypress Creek** well-fields, our demolition protocol exceeds the standard environmental protection requirements. We utilize biodegradable hydraulic fluids and electric-start machinery to minimize the environmental footprint of your backyard reclamation.
                   </p>
@@ -333,28 +332,70 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. ADVANCED DEMOLITION TECHNIQUES */}
+      {/* 3-STEP PROCESS SECTION */}
       <section className="section bg-surface-alt reveal">
          <div className="container">
             <div style={{ textAlign: "center", marginBottom: "4rem" }}>
-               <h2 style={{ fontSize: "2.5rem" }}>5. Engineered Extractions: Beyond the Sledgehammer</h2>
-               <p style={{ color: "var(--text-muted)" }}>We utilize industrial-grade technology designed for Tampa's unique soil profile.</p>
+               <h2 style={{ fontSize: "2.5rem" }}>Our 3-Step Tampa Demolition Process</h2>
+               <p style={{ color: "var(--text-muted)", fontSize: "1.1rem" }}>No guessing. Just a straightforward system designed to keep your yard dry and your property safe.</p>
             </div>
             <div className="grid grid-cols-3 gap-12">
-               <div style={{ background: "white", padding: "2.5rem", borderRadius: "16px" }}>
-                  <Anchor size={32} color="var(--primary)" style={{ marginBottom: "1rem" }} />
-                  <h4>Z-Shoring Foundation Protection</h4>
-                  <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>For pools within 5 feet of a home's foundation, we utilize specialized shoring to ensure zero soil migration during extraction.</p>
+               <div style={{ background: "white", padding: "2.5rem", borderRadius: "16px", border: "1px solid var(--border)" }}>
+                  <div style={{ background: "var(--primary)", color: "white", width: "40px", height: "40px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold", fontSize: "1.2rem", marginBottom: "1rem" }}>1</div>
+                  <h4 style={{ fontSize: "1.2rem", marginBottom: "0.5rem" }}>Drain & Prep</h4>
+                  <p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.6 }}>We pull permits, cap the utilities, and safely pump out the water. If you're in a high water table zone, we use well-point dewatering to stabilize the ground before heavy machinery ever touches your grass.</p>
                </div>
-               <div style={{ background: "white", padding: "2.5rem", borderRadius: "16px" }}>
-                  <Droplets size={32} color="var(--primary)" style={{ marginBottom: "1rem" }} />
-                  <h4>Turbo-Vane Dewatering</h4>
-                  <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>Our pumps can move 5,000 gallons per hour with silent operation, maintaining neighbor peace while stabilizing the water table.</p>
+               <div style={{ background: "white", padding: "2.5rem", borderRadius: "16px", border: "1px solid var(--border)" }}>
+                  <div style={{ background: "var(--primary)", color: "white", width: "40px", height: "40px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold", fontSize: "1.2rem", marginBottom: "1rem" }}>2</div>
+                  <h4 style={{ fontSize: "1.2rem", marginBottom: "0.5rem" }}>Demolition & Break-up</h4>
+                  <p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.6 }}>We break through the concrete and steel shell. We don't just bury the mess—we punch substantial drainage holes at the deep end to ensure your yard never turns into a hidden swamp after heavy summer rains.</p>
                </div>
-               <div style={{ background: "white", padding: "2.5rem", borderRadius: "16px" }}>
-                  <HardHat size={32} color="var(--primary)" style={{ marginBottom: "1rem" }} />
-                  <h4>Laser-Guided Leveling</h4>
-                  <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>We utilize top-tier laser grading to ensure your new yard drains 100% effectively toward the city swales.</p>
+               <div style={{ background: "white", padding: "2.5rem", borderRadius: "16px", border: "1px solid var(--border)" }}>
+                  <div style={{ background: "var(--primary)", color: "white", width: "40px", height: "40px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold", fontSize: "1.2rem", marginBottom: "1rem" }}>3</div>
+                  <h4 style={{ fontSize: "1.2rem", marginBottom: "0.5rem" }}>Engineered Backfill & Compaction</h4>
+                  <p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.6 }}>We bring in clean, certified A-3 sand and pack it down in strict 10-inch layers. This guarantees 98% Proctor compaction, meaning the ground is rock-solid and ready for new grass, a patio, or an ADU.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="section bg-primary text-white reveal">
+         <div className="container">
+            <div style={{ textAlign: "center", marginBottom: "3rem" }}>
+               <h2 style={{ fontSize: "2.5rem", color: "white" }}>What Your Neighbors Say</h2>
+               <p style={{ opacity: 0.9, fontSize: "1.1rem" }}>Real results from homeowners across Hillsborough and Pinellas.</p>
+            </div>
+            <div className="grid grid-cols-3 gap-8">
+               <div style={{ background: "rgba(255,255,255,0.1)", padding: "2rem", borderRadius: "16px" }}>
+                  <div style={{ display: "flex", color: "#FFD700", marginBottom: "1rem" }}>★★★★★</div>
+                  <p style={{ fontSize: "0.95rem", lineHeight: 1.6, fontStyle: "italic", marginBottom: "1.5rem" }}>
+                     "I was terrified my yard would flood because we sit so low in South Tampa. These guys handled the drainage perfectly. We had massive rain a week after they finished and the yard drained better than it did when the pool was there."
+                  </p>
+                  <div>
+                     <strong>Mark T.</strong>
+                     <span style={{ display: "block", fontSize: "0.85rem", opacity: 0.8 }}>South Tampa, FL</span>
+                  </div>
+               </div>
+               <div style={{ background: "rgba(255,255,255,0.1)", padding: "2rem", borderRadius: "16px" }}>
+                  <div style={{ display: "flex", color: "#FFD700", marginBottom: "1rem" }}>★★★★★</div>
+                  <p style={{ fontSize: "0.95rem", lineHeight: 1.6, fontStyle: "italic", marginBottom: "1.5rem" }}>
+                     "They weren't the absolute cheapest quote, but they were the only ones who actually explained how they handle the water table issue in Brandon. Glad I went with them, the ground is completely solid and my new sod looks great."
+                  </p>
+                  <div>
+                     <strong>Sarah Jenkins</strong>
+                     <span style={{ display: "block", fontSize: "0.85rem", opacity: 0.8 }}>Brandon, FL</span>
+                  </div>
+               </div>
+               <div style={{ background: "rgba(255,255,255,0.1)", padding: "2rem", borderRadius: "16px" }}>
+                  <div style={{ display: "flex", color: "#FFD700", marginBottom: "1rem" }}>★★★★★</div>
+                  <p style={{ fontSize: "0.95rem", lineHeight: 1.6, fontStyle: "italic", marginBottom: "1.5rem" }}>
+                     "Dealing with Pinellas County permits is a nightmare, but they took care of everything. The crew was respectful, kept the site clean, and got the old fiberglass tub out without ruining our driveway."
+                  </p>
+                  <div>
+                     <strong>David R.</strong>
+                     <span style={{ display: "block", fontSize: "0.85rem", opacity: 0.8 }}>St. Petersburg, FL</span>
+                  </div>
                </div>
             </div>
          </div>

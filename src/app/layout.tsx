@@ -13,9 +13,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://poolremovaltampa.com"),
   title: "Pool Removal Tampa, FL | Tampa Pool Removal & Demolition",
   description: "Pool removal in Tampa requires proper drainage and soil stabilization. Most projects range $9k–$18k. Get a fast estimate today.",
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     title: "Pool Removal Tampa, FL — Cost, Drainage & Permits",
     description: "Pool removal in Tampa requires proper drainage and soil stabilization. Most projects range $9k–$18k. Get a fast estimate today.",
