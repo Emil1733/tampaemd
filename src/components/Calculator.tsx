@@ -1,8 +1,8 @@
 "use client";
-// Force re-bundling to fix Lucide icon factory error in Turbopack
 
 import React, { useState } from "react";
-import { Calculator as CalcIcon, Droplets, Ruler, Truck, User, Phone, CheckCircle2, ArrowRight, ShieldAlert } from "lucide-react";
+import Link from "next/link";
+import { Calculator as CalcIcon, CheckCircle2, ArrowRight, ShieldAlert } from "lucide-react";
 import { submitLead } from "@/app/actions/submitLead";
 
 export default function Calculator() {
@@ -14,7 +14,7 @@ export default function Calculator() {
     access: "",
     name: "",
     phone: "",
-    website: "" // Honeypot field
+    website: ""
   });
   const [priceRange, setPriceRange] = useState({ min: 0, max: 0 });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -59,7 +59,7 @@ export default function Calculator() {
       setError(result.error);
       setIsSubmitting(false);
     } else {
-      setStep(3); // Success
+      setStep(3);
       setIsSubmitting(false);
     }
   };
@@ -68,20 +68,23 @@ export default function Calculator() {
     return (
       <div className="glass-card text-center reveal" style={{ padding: '3rem 2rem' }}>
         <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: 'var(--secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem' }}>
-           <CheckCircle2 color="white" size={40} />
+          <CheckCircle2 color="white" size={40} />
         </div>
-        <h3 style={{ fontSize: '2rem' }}>Report Scheduled</h3>
-        <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>
-          Your estimated range for Tampa conditions is:
-        </p>
+        <h3 style={{ fontSize: '2rem' }}>Estimate Request Received</h3>
+        <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>Your estimated range for Tampa conditions is:</p>
         <div style={{ margin: '1.5rem 0', padding: '1.5rem', background: 'var(--surface-alt)', borderRadius: 'var(--radius-md)' }}>
-           <strong style={{ fontSize: '2rem', color: 'var(--primary)', display: 'block' }}>
-            ${priceRange.min.toLocaleString()} – ${priceRange.max.toLocaleString()}
+          <strong style={{ fontSize: '2rem', color: 'var(--primary)', display: 'block' }}>
+            ${priceRange.min.toLocaleString()} - ${priceRange.max.toLocaleString()}
           </strong>
-          <span style={{ fontSize: '0.8rem', color: 'var(--text-light)', textTransform: 'uppercase' }}>Estimated Investment</span>
+          <span style={{ fontSize: '0.8rem', color: 'var(--text-light)', textTransform: 'uppercase' }}>Planning Estimate</span>
         </div>
         <p style={{ marginTop: '1.5rem', fontSize: '0.95rem' }}>
-          Our local specialist will contact you shortly at <strong>{formData.phone}</strong> to verify soil conditions and finalize your quote.
+          Your information has been submitted so the project details can be reviewed before a final quote is provided.
+        </p>
+        <p style={{ marginTop: '1.25rem', fontSize: '0.9rem' }}>
+          <Link href="/" style={{ color: 'var(--primary)', fontWeight: 700, textDecoration: 'underline' }}>
+            Review our Tampa pool removal overview
+          </Link>
         </p>
       </div>
     );
@@ -89,11 +92,10 @@ export default function Calculator() {
 
   return (
     <div className="glass-card" id="calculator" style={{ position: 'relative', overflow: 'hidden' }}>
-      {/* Progress Bar */}
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '6px', background: 'var(--border)' }}>
-        <div style={{ 
-          width: step === 1 ? '50%' : '100%', 
-          height: '100%', 
+        <div style={{
+          width: step === 1 ? '50%' : '100%',
+          height: '100%',
           background: 'linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%)',
           transition: 'width 0.6s cubic-bezier(0.23, 1, 0.32, 1)'
         }}></div>
@@ -101,11 +103,16 @@ export default function Calculator() {
 
       <div style={{ textAlign: 'center', marginBottom: '2.5rem', marginTop: '1rem' }}>
         <div style={{ display: 'inline-flex', padding: '0.75rem', background: 'rgba(0,180,216,0.1)', borderRadius: '12px', marginBottom: '1rem' }}>
-           <CalcIcon color="var(--primary)" size={24} />
+          <CalcIcon color="var(--primary)" size={24} />
         </div>
-        <h3 style={{ marginBottom: '0.5rem', fontSize: '1.5rem' }}>Site Investment Estimator</h3>
+        <h3 style={{ marginBottom: '0.5rem', fontSize: '1.5rem' }}>Tampa Pool Removal Cost Estimator</h3>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-          {step === 1 ? "Step 1: Environmental & Site Analysis" : "Step 2: Personal Report Delivery"}
+          {step === 1 ? "Estimate based on pool type, size, access and groundwater conditions" : "See your planning range, then request a project review"}
+        </p>
+        <p style={{ fontSize: '0.82rem', marginTop: '0.75rem' }}>
+          <Link href="/" style={{ color: 'var(--primary)', fontWeight: 700, textDecoration: 'underline' }}>
+            Tampa pool removal overview
+          </Link>
         </p>
       </div>
 
@@ -131,13 +138,13 @@ export default function Calculator() {
               </select>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-2">
             <div className="input-group">
-              <label className="input-label">Groundwater Level</label>
+              <label className="input-label">Groundwater Conditions</label>
               <select name="waterConditions" required className="input-field" onChange={handleChange} value={formData.waterConditions}>
                 <option value="">Select Conditions</option>
-                <option value="Normal">Normal Soil</option>
+                <option value="Normal">Normal / Unknown</option>
                 <option value="High Water Table">High Water Table / Wet</option>
               </select>
             </div>
@@ -147,52 +154,44 @@ export default function Calculator() {
                 <option value="">Select Access</option>
                 <option value="Easy">Wide Open</option>
                 <option value="Limited">Standard Gate</option>
-                <option value="Tight">Tight / Zero Entry</option>
+                <option value="Tight">Tight Access</option>
               </select>
             </div>
           </div>
 
           <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: '1.5rem', borderRadius: 'var(--radius-md)' }}>
-            Calculate Est. Replacement <ArrowRight size={18} />
+            Calculate Pool Removal Estimate <ArrowRight size={18} />
           </button>
         </form>
       ) : (
         <form onSubmit={handleSubmit} className="reveal">
           <div style={{ background: 'var(--surface-alt)', padding: '2rem', borderRadius: 'var(--radius-lg)', textAlign: 'center', marginBottom: '2.5rem', border: '1px solid var(--border)' }}>
-            <span style={{ fontSize: '0.75rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 700 }}>Estimated Range for Tampa</span>
+            <span style={{ fontSize: '0.75rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 700 }}>Estimated Tampa Planning Range</span>
             <div style={{ fontSize: '2.75rem', color: 'var(--primary-dark)', fontWeight: 800, fontFamily: 'var(--font-outfit)', margin: '0.5rem 0' }}>
-              ${priceRange.min.toLocaleString()} – ${priceRange.max.toLocaleString()}
+              ${priceRange.min.toLocaleString()} - ${priceRange.max.toLocaleString()}
             </div>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', fontStyle: 'italic' }}>*Based on local 2026 material and disposal rates.</p>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', fontStyle: 'italic' }}>*Planning estimate only. Actual pricing depends on site conditions, scope, permitting and contractor quote.</p>
           </div>
 
           <div style={{ marginBottom: '2rem' }}>
-             <p style={{ textAlign: 'center', fontWeight: 600, color: 'var(--text-main)' }}>
-              Where should we send your site-specific dewatering report?
-             </p>
+            <p style={{ textAlign: 'center', fontWeight: 600, color: 'var(--text-main)' }}>
+              Request a site-specific pool removal quote
+            </p>
           </div>
 
           <div className="grid grid-cols-2">
-             <div className="input-group">
-               <label className="input-label">Full Name</label>
-               <input type="text" name="name" required className="input-field" placeholder="John Doe" onChange={handleChange} value={formData.name} />
-             </div>
-             <div className="input-group">
-               <label className="input-label">Phone Number</label>
-               <input type="tel" name="phone" required className="input-field" placeholder="(813) 555-0199" onChange={handleChange} value={formData.phone} />
-             </div>
+            <div className="input-group">
+              <label className="input-label">Full Name</label>
+              <input type="text" name="name" required className="input-field" placeholder="John Doe" onChange={handleChange} value={formData.name} />
+            </div>
+            <div className="input-group">
+              <label className="input-label">Phone Number</label>
+              <input type="tel" name="phone" required className="input-field" placeholder="Your phone number" onChange={handleChange} value={formData.phone} />
+            </div>
           </div>
 
-          {/* Secure Honeypot - Hidden from humans */}
           <div style={{ display: 'none' }} aria-hidden="true">
-            <input 
-              type="text" 
-              name="website" 
-              tabIndex={-1} 
-              autoComplete="off" 
-              onChange={handleChange} 
-              value={formData.website} 
-            />
+            <input type="text" name="website" tabIndex={-1} autoComplete="off" onChange={handleChange} value={formData.website} />
           </div>
 
           {error && (
@@ -202,11 +201,11 @@ export default function Calculator() {
           )}
 
           <button type="submit" disabled={isSubmitting} className="btn btn-accent" style={{ width: '100%', marginTop: '0.5rem', borderRadius: 'var(--radius-md)' }}>
-            {isSubmitting ? "Generating Report..." : "Get My Professional Site Analysis"}
+            {isSubmitting ? "Submitting..." : "Request My Pool Removal Quote"}
           </button>
-          
+
           <button type="button" onClick={() => setStep(1)} className="btn btn-outline" style={{ width: '100%', marginTop: '1rem', border: 'none', fontSize: '0.9rem', color: 'var(--text-light)' }}>
-            ← Back to Site Details
+            Back to Site Details
           </button>
         </form>
       )}
