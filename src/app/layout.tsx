@@ -23,11 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -37,7 +33,7 @@ export default function RootLayout({
   };
 
   const navLinks = [
-    { name: "Services", href: "/pool-removal" },
+    { name: "Services", href: "/" },
     { name: "Tampa Costs", href: "/pool-removal-cost-tampa" },
     { name: "Full vs Partial", href: "/full-vs-partial-pool-removal" },
     { name: "Our Process", href: "/pool-demolition-process" },
@@ -48,87 +44,39 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${outfit.variable}`}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        
-        {/* Main Header */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <header style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)', position: 'sticky', top: 0, zIndex: 100 }}>
           <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', minHeight: '80px', padding: '0.5rem 1.5rem' }}>
-            
-            {/* Logo */}
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0z" />
-                <path d="M8 12c1.5 0 2.5 1 4 1s2.5-1 4-1" />
-                <path d="M8 16c1.5 0 2.5 1 4 1s2.5-1 4-1" />
-              </svg>
-              <span style={{ fontFamily: 'var(--font-outfit)', fontSize: '1.25rem', fontWeight: 700, color: 'var(--primary-dark)' }}>
-                Tampa Pool Removal
-              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0z" /><path d="M8 12c1.5 0 2.5 1 4 1s2.5-1 4-1" /><path d="M8 16c1.5 0 2.5 1 4 1s2.5-1 4-1" /></svg>
+              <span style={{ fontFamily: 'var(--font-outfit)', fontSize: '1.25rem', fontWeight: 700, color: 'var(--primary-dark)' }}>Tampa Pool Removal</span>
             </Link>
-
             <MobileNav />
-
-            {/* Desktop Navigation */}
             <nav className="desktop-nav">
-              {navLinks.map((link) => (
-                <Link key={link.href} href={link.href} style={{ fontWeight: 600, color: 'var(--text-main)', fontSize: '0.95rem' }}>
-                  {link.name}
-                </Link>
-              ))}
-              
-              <Link href="/contact" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.95rem' }}>
-                Contact Us
-              </Link>
+              {navLinks.map((link) => (<Link key={`${link.name}-${link.href}`} href={link.href} style={{ fontWeight: 600, color: 'var(--text-main)', fontSize: '0.95rem' }}>{link.name}</Link>))}
+              <Link href="/contact" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.95rem' }}>Contact Us</Link>
             </nav>
-
           </div>
         </header>
-
         <main>{children}</main>
-
         <footer style={{ background: 'var(--primary-dark)', color: 'white', padding: '4rem 0 2rem' }}>
           <div className="container grid grid-cols-3" style={{ gap: '4rem' }}>
-            
-            {/* Brand Col */}
             <div>
               <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', color: 'white' }}>
-                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0z" />
-                  <path d="M8 12c1.5 0 2.5 1 4 1s2.5-1 4-1" />
-                  <path d="M8 16c1.5 0 2.5 1 4 1s2.5-1 4-1" />
-                </svg>
-                <span style={{ fontFamily: 'var(--font-outfit)', fontSize: '1.25rem', fontWeight: 700 }}>
-                  Tampa Pool Removal
-                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0z" /><path d="M8 12c1.5 0 2.5 1 4 1s2.5-1 4-1" /><path d="M8 16c1.5 0 2.5 1 4 1s2.5-1 4-1" /></svg>
+                <span style={{ fontFamily: 'var(--font-outfit)', fontSize: '1.25rem', fontWeight: 700 }}>Tampa Pool Removal</span>
               </Link>
-              <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>
-                Pool removal information, cost guidance, permit resources, and estimate requests for homeowners across Tampa Bay.
-              </p>
-              <div style={{ marginTop: '1.5rem' }}>
-                <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--secondary)', fontWeight: 'bold' }}>
-                  <PhoneCall size={20} /> Request an Estimate
-                </Link>
-              </div>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Pool removal information, cost guidance, permit resources, and estimate requests for homeowners across Tampa Bay.</p>
+              <div style={{ marginTop: '1.5rem' }}><Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--secondary)', fontWeight: 'bold' }}><PhoneCall size={20} /> Request an Estimate</Link></div>
             </div>
-
-            {/* Quick Links */}
             <div>
               <h4 style={{ color: 'white', marginBottom: '1.5rem' }}>Quick Links</h4>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <li><Link href="/" style={{ color: 'var(--text-light)' }}>Home / Calculator</Link></li>
-                {navLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href} style={{ color: 'var(--text-light)' }}>{link.name}</Link>
-                  </li>
-                ))}
+                {navLinks.map((link) => (<li key={`${link.name}-${link.href}`}><Link href={link.href} style={{ color: 'var(--text-light)' }}>{link.name}</Link></li>))}
                 <li><Link href="/contact" style={{ color: 'var(--text-light)' }}>Free Estimate Form</Link></li>
               </ul>
             </div>
-
-            {/* Service Areas */}
             <div>
               <h4 style={{ color: 'white', marginBottom: '1.5rem' }}>Core Service Areas</h4>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -140,7 +88,6 @@ export default function RootLayout({
                 <li><Link href="/tampa-service-areas/carrollwood" style={{ color: 'var(--text-light)' }}>Carrollwood</Link></li>
                 <li><Link href="/tampa-service-areas/wesley-chapel" style={{ color: 'var(--text-light)' }}>Wesley Chapel</Link></li>
               </ul>
-              
               <h4 style={{ color: 'white', margin: '2rem 0 1.5rem' }}>Pool Removal Resources</h4>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <li><Link href="/resources/hillsborough-pool-permits" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Hillsborough County Permits</Link></li>
@@ -154,22 +101,10 @@ export default function RootLayout({
                 <li><Link href="/blog/building-after-pool-removal" style={{ color: 'var(--text-light)' }}>Building Over Pools Guide</Link></li>
               </ul>
             </div>
-
           </div>
-          
-          <div className="container" style={{ marginTop: '4rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', textAlign: 'center', color: 'var(--text-light)', fontSize: '0.85rem' }}>
-            <p>© {new Date().getFullYear()} Tampa Pool Removal & Demolition. All rights reserved.</p>
-            <p style={{ marginTop: '0.5rem' }}>Pool Removal Resources for Tampa Bay Homeowners</p>
-          </div>
+          <div className="container" style={{ marginTop: '4rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', textAlign: 'center', color: 'var(--text-light)', fontSize: '0.85rem' }}><p>© {new Date().getFullYear()} Tampa Pool Removal & Demolition. All rights reserved.</p><p style={{ marginTop: '0.5rem' }}>Pool Removal Resources for Tampa Bay Homeowners</p></div>
         </footer>
-
-        {/* Sticky CTA */}
-        <div className="sticky-cta">
-          <Link href="/#calculator" className="btn btn-accent" style={{ display: 'flex', boxShadow: '0 10px 30px rgba(0,0,0,0.3)' }}>
-            <PhoneCall size={20} />
-            Instant Estimate
-          </Link>
-        </div>
+        <div className="sticky-cta"><Link href="/#calculator" className="btn btn-accent" style={{ display: 'flex', boxShadow: '0 10px 30px rgba(0,0,0,0.3)' }}><PhoneCall size={20} />Instant Estimate</Link></div>
       </body>
     </html>
   );
