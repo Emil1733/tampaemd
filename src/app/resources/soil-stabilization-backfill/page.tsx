@@ -1,16 +1,14 @@
 import React from "react";
 import { Metadata } from "next";
 import Calculator from "@/components/Calculator";
-import { CheckCircle, ShieldCheck, HardHat, Info, Mountain, Layers, Activity, Droplets, Target, Hammer, Microscope, HelpCircle } from "lucide-react";
+import { CheckCircle, Layers, Droplets, HelpCircle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Pool Backfill & Soil Stabilization Tampa | 1500+ Word Authority Guide",
-  description: "The definitive guide to engineered pool backfill in Tampa, FL. Learn about 95% Proctor density, dewatering requirements, and soil stabilization for building.",
-  alternates: {
-    canonical: "/resources/soil-stabilization-backfill",
-  },
+  title: "Pool Backfill & Soil Stabilization Tampa, FL | Guide",
+  description: "Learn how pool backfill, compaction, drainage and future land use affect a Tampa pool removal project, plus what to ask contractors before filling the excavation.",
+  alternates: { canonical: "/resources/soil-stabilization-backfill" },
 };
 
 export default function SoilStabilization() {
@@ -18,307 +16,62 @@ export default function SoilStabilization() {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is A-3 sand and why is it used in Tampa?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A-3 sand is a specific grade of clean, fine-grained soil that matches the natural geological profile of the Tampa Bay area, providing superior drainage and compaction stability."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is a Proctor Compaction test?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The Proctor test measures the maximum dry density of the soil. We aim for 98% compaction to ensure the ground can support future structures."
-        }
-      }
+      { "@type": "Question", "name": "Why does pool backfill matter after removal?", "acceptedAnswer": { "@type": "Answer", "text": "The material placed in the former pool area becomes part of the property. Fill type, placement, moisture, compaction, drainage and intended future use can all affect long-term performance." } },
+      { "@type": "Question", "name": "What is a Proctor compaction test?", "acceptedAnswer": { "@type": "Answer", "text": "A Proctor laboratory test establishes a reference relationship between soil moisture and dry density. When project specifications require field compaction testing, field results can be compared with that laboratory reference." } },
+      { "@type": "Question", "name": "Can I build over a former pool area?", "acceptedAnswer": { "@type": "Answer", "text": "Future construction should be considered before the pool is removed. The appropriate demolition, fill, compaction, testing and foundation design depend on the proposed structure, site conditions and applicable building requirements." } }
     ]
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-      <Breadcrumbs items={[
-        { name: "Resources", href: "/resources" },
-        { name: "Soil & Backfill", href: "/resources/soil-stabilization-backfill" }
-      ]} />
-      {/* HERO SECTION */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <Breadcrumbs items={[{ name: "Resources", href: "/resources" }, { name: "Soil & Backfill", href: "/resources/soil-stabilization-backfill" }]} />
+
       <section className="section bg-surface">
         <div className="container grid grid-cols-2 gap-12 items-start">
           <div>
-            <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "var(--primary)", fontWeight: 600, marginBottom: "1rem" }}>
-              <Layers size={20} />
-              <span>Institutional Authority Guide</span>
-            </div>
-            <h1>Engineered Pool Backfill & Soil Stabilization Standards</h1>
-            <p style={{ fontSize: "1.25rem", lineHeight: 1.8, marginBottom: "2rem", color: "var(--text-muted)" }}>
-                In the Tampa Bay region, a pool removal project is only as successful as the soil that replaces it. With Florida's unique hydrological profile and sandy soil compositions, failing to stabilize the land can lead to catastrophic yard collapse, sink-pockets, and "zombie" drainage issues.
-            </p>
-
-            <div style={{ background: "rgba(0,180,216,0.05)", padding: "2.5rem", borderRadius: "var(--radius-lg)", borderLeft: "4px solid var(--primary)", marginBottom: "3rem" }}>
-               <h3 style={{ fontSize: "1.3rem", marginBottom: "1.25rem", display: "flex", alignItems: "center", gap: "0.75rem" }}>
-                  <Microscope size={24} color="var(--primary)" /> 
-                  The "95% Proctor" Standard
-               </h3>
-               <p style={{ fontSize: "1rem", lineHeight: 1.7, margin: 0 }}>
-                  For a lot to be classified as "Build-Ready" after pool demolition, the backfill must reach a **95% Proctor Density**. This is a measure of the soil's dry unit weight compared to its maximum possible density. In Tampa, achieving this requires nuclear density testing and specific moisture-to-compaction ratios that most general contractors simply ignore.
-               </p>
-            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "var(--primary)", fontWeight: 600, marginBottom: "1rem" }}><Layers size={20} /><span>Tampa Pool Removal Resource</span></div>
+            <h1>Pool Backfill & Soil Stabilization in Tampa</h1>
+            <p style={{ fontSize: "1.25rem", lineHeight: 1.8, marginBottom: "2rem", color: "var(--text-main)" }}>Once a swimming pool is demolished, the excavation still has to become usable ground. The backfill material, placement method, moisture conditions, drainage and intended future use of the area can matter as much as the demolition itself.</p>
+            <p style={{ fontSize: "1rem", lineHeight: 1.8, color: "var(--text-muted)", marginBottom: "2rem" }}>If you are planning the complete project, start with our <Link href="/" style={{ color: "var(--primary)", fontWeight: 700, textDecoration: "underline" }}>Tampa pool removal guide</Link>. This page focuses specifically on what happens after the pool shell is removed or prepared for backfilling.</p>
+            <Link href="#calculator" className="btn btn-primary">Estimate My Pool Removal</Link>
           </div>
-
-          <aside className="calculator-wrap" style={{ position: "sticky", top: "100px" }}>
-            <Calculator />
-          </aside>
+          <aside className="calculator-wrap" id="calculator" style={{ position: "sticky", top: "100px" }}><Calculator /></aside>
         </div>
       </section>
 
-      {/* TECHNICAL DEEP DIVE: HYDROLOGY */}
       <section className="section">
-        <div className="container">
-          <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-            <div style={{ marginBottom: "4rem", borderRadius: "var(--radius-lg)", overflow: "hidden", boxShadow: "var(--shadow-lg)" }}>
-              <img 
-                src="/images/engineered-pool-backfill-compaction.png" 
-                alt="Professional nuclear density gauge testing 98% Proctor compaction on a Tampa pool removal site."
-                style={{ width: "100%", height: "auto", display: "block" }}
-              />
-              <div style={{ padding: "1.5rem", background: "white", borderTop: "1px solid var(--border)", fontSize: "0.9rem", fontStyle: "italic", color: "var(--text-muted)" }}>
-                Figure 2.2: Nuclear density testing in progress. Achieving 95-98% Proctor density ensures the reclaimed lot is structural and ready for permanent foundations, adhering to the <Link href="/blog/building-after-pool-removal" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>structural engineering criteria for building over pools</Link>.
-              </div>
-            </div>
-            <h2 style={{ fontSize: "2.5rem", marginBottom: "2rem" }}>1. The Tampa Hydrological Trap</h2>
-            <p style={{ fontSize: "1.1rem", lineHeight: 1.9, marginBottom: "2rem" }}>
-              Unlike the clay soils of Atlanta or the hard rock of Scottsdale, Tampa’s sub-surface is dominated by fine-grained sand and a seasonally fluctuating water table. When you remove a pool shell, you aren't just leaving a hole; you are creating a temporary "void" in the local hydraulic pressure system.
-            </p>
-            <div className="grid grid-cols-2 gap-8 mb-12">
-              <div className="glass-card" style={{ padding: "2rem" }}>
-                <h4 style={{ color: "var(--primary)", marginBottom: "1rem" }}>Hydraulic Heave</h4>
-                <p style={{ fontSize: "0.95rem" }}>If backfill isn't porous enough, groundwater can get trapped beneath the new soil, creating a "sponge effect" that causes your lawn to feel soft even weeks after it has rained.</p>
-              </div>
-              <div className="glass-card" style={{ padding: "2rem" }}>
-                <h4 style={{ color: "var(--primary)", marginBottom: "1rem" }}>Lateral Migration</h4>
-                <p style={{ fontSize: "0.95rem" }}>Tampa's sandy soil moves laterally. Without stabilization, the pressure from your neighbor's pool or foundation can push into your filled area, causing "stair-step" cracks in new patios.</p>
-              </div>
-            </div>
-          </div>
+        <div className="container"><div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center", marginBottom: "3rem" }}><h2>What Makes Good Pool Backfill?</h2><p style={{ color: "var(--text-muted)", fontSize: "1.05rem", lineHeight: 1.8 }}>There is no single fill specification that is automatically correct for every Tampa property. The right approach depends on the soil, groundwater, removal method, local requirements and what you plan to do with the reclaimed area.</p></div>
+          <div className="grid grid-cols-3 gap-8">{[["Suitable Fill Material", "Backfill should be appropriate for the project specification and should avoid uncontrolled debris or organic material that can create future voids."], ["Controlled Placement", "Placing a deep excavation all at once can make uniform compaction difficult. Contractors may place fill in controlled layers when the project specification calls for it."], ["Moisture Conditions", "Soil that is too wet or too dry can be difficult to compact effectively. Groundwater and recent weather can therefore affect the work."], ["Compaction", "Compaction requirements should match the intended use and any engineering, permit or construction specification for the site."], ["Drainage & Grade", "The finished area should be graded with site drainage in mind so water is not unintentionally directed toward structures or neighboring property."], ["Documentation", "If testing, engineering or inspection records are required or useful for future construction, keep copies with the property records."]].map(([title, text]) => (<div key={title} className="glass-card" style={{ padding: "2rem" }}><CheckCircle size={26} color="var(--primary)" style={{ marginBottom: "1rem" }} /><h3 style={{ fontSize: "1.15rem" }}>{title}</h3><p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.7 }}>{text}</p></div>))}</div>
         </div>
       </section>
 
-      {/* MATERIAL SELECTION PILLAR */}
       <section className="section bg-surface-alt">
-        <div className="container">
-          <div style={{ textAlign: "center", marginBottom: "4rem" }}>
-            <h2 style={{ fontSize: "2.5rem" }}>2. Material Selection & Sourcing</h2>
-            <p style={{ color: "var(--text-muted)", maxWidth: "800px", margin: "0 auto" }}>
-              We don't just "buy dirt." We source specific geological materials required for structural load-bearing performance in Florida.
-            </p>
-          </div>
-          <div className="grid grid-cols-3 gap-8">
-            <div className="text-center">
-              <Mountain size={40} color="var(--primary)" style={{ margin: "0 auto 1.5rem" }} />
-              <h4>Clean Virgin Fill</h4>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>We use only virgin, screened fill. Recycled concrete or organic-heavy soil leads to "rot voids" as the organic material decomposes over 5-10 years.</p>
-            </div>
-            <div className="text-center">
-              <Droplets size={40} color="var(--primary)" style={{ margin: "0 auto 1.5rem" }} />
-              <h4>Capillary Break Layers</h4>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>In high-water areas, we install a layer of #57 stone at the base to act as a capillary break, preventing moisture from wicking up into the surface layers.</p>
-            </div>
-            <div className="text-center">
-              <Layers size={40} color="var(--primary)" style={{ margin: "0 auto 1.5rem" }} />
-              <h4>Bio-Organic Topsoil</h4>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>Only the final 6-12 inches consist of nutrient-rich topsoil to support sod or landscaping, ensuring the deep structure remains purely structural.</p>
-            </div>
-          </div>
+        <div className="container grid grid-cols-2 gap-16 items-center">
+          <div><Layers size={42} color="var(--primary)" style={{ marginBottom: "1rem" }} /><h2>Understanding Lift-by-Lift Compaction</h2><p style={{ fontSize: "1.05rem", lineHeight: 1.8, marginBottom: "1.5rem" }}>On projects that require controlled compaction, fill is commonly placed in layers, often called lifts, rather than treating the entire excavation as one mass. Each layer can then be conditioned and compacted before additional material is placed.</p><p style={{ fontSize: "1.05rem", lineHeight: 1.8 }}>The appropriate lift thickness, equipment, moisture range and target density are project-specific. If a contractor quotes a precise compaction percentage, ask what specification requires it, how it will be measured and whether independent testing is included.</p></div>
+          <div className="glass-card" style={{ padding: "2.5rem" }}><h3>Questions About Compaction</h3><ul style={{ lineHeight: 2, paddingLeft: "1.25rem" }}><li>What fill material is included in the quote?</li><li>Will the fill be placed in controlled layers?</li><li>How will wet conditions or groundwater be handled?</li><li>Is a compaction target specified?</li><li>Who performs any required testing?</li><li>Will I receive copies of test or inspection records?</li></ul></div>
         </div>
       </section>
 
-      {/* COMPACTION PROCESS EXPANSION */}
       <section className="section">
-        <div className="container">
-          <div className="grid grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>3. The "Lift-by-Lift" Compaction Cycle</h2>
-              <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "2rem" }}>
-                True stabilization is impossible in a single pour. Our crews follow a rigorous **"6-to-12 Inch Lift"** protocol. This is the difference between a yard that sinks and a yard that supports a 20-ton ADU or outdoor kitchen.
-              </p>
-              <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-                {[
-                  { title: "Vibratory Compaction", desc: "Using 5,000-lb centrifugal force plates to pack sand particles into a dense matrix." },
-                  { title: "Moisture Optimization", desc: "Adding water during compaction to reach the 'Optimum Moisture Content,' allowing particles to slide into their tightest formation." },
-                  { title: "Nuclear Density Verification", desc: "For high-stakes projects, we utilize independent engineers to verify the 95% Proctor density through a nuclear gauge." }
-                ].map((item, i) => (
-                  <li key={i} style={{ display: "flex", gap: "1rem" }}>
-                    <CheckCircle size={20} color="var(--secondary)" style={{ flexShrink: 0, marginTop: "0.2rem" }} />
-                    <div>
-                      <span style={{ fontWeight: 700, display: "block" }}>{item.title}</span>
-                      <span style={{ fontSize: "0.95rem", color: "var(--text-muted)" }}>{item.desc}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="glass-card" style={{ padding: "3rem", background: "var(--primary)", color: "white" }}>
-              <Target size={48} style={{ marginBottom: "1.5rem", opacity: 0.8 }} />
-              <h3>The 10-Year Yard Guarantee</h3>
-              <p style={{ fontSize: "1.1rem", opacity: 0.9, marginBottom: "2rem" }}>
-                Because we use engineered fill and precision compaction, we are the only Tampa contractor to offer a structural guarantee against significant settling or sinkage.
-              </p>
-              <Link href="/contact" className="btn" style={{ background: "white", color: "var(--primary)" }}>Get Professional Stabilization</Link>
-            </div>
-          </div>
+        <div className="container grid grid-cols-2 gap-16 items-center">
+          <div className="glass-card" style={{ padding: "2.5rem" }}><Droplets size={42} color="var(--primary)" style={{ marginBottom: "1rem" }} /><h3>Groundwater Can Change the Backfill Plan</h3><p style={{ lineHeight: 1.8 }}>Tampa Bay properties can experience seasonal or site-specific groundwater conditions. Water in the excavation can interfere with demolition, material placement and compaction. The contractor should evaluate actual conditions rather than assuming every site requires the same dewatering setup.</p><Link href="/resources/high-water-table-dewatering" style={{ color: "var(--primary)", fontWeight: 600, textDecoration: "underline" }}>Read the Tampa dewatering guide</Link></div>
+          <div><h2>Backfill and Water Management Work Together</h2><p style={{ fontSize: "1.05rem", lineHeight: 1.8 }}>A successful fill operation needs stable working conditions. If groundwater is encountered, ask how it will be controlled, where water will be discharged, whether the proposed fill can be placed under those conditions, and whether the schedule should change after heavy rain.</p><p style={{ fontSize: "1.05rem", lineHeight: 1.8 }}>These decisions are particularly important when the reclaimed area may later support hardscape or construction.</p></div>
         </div>
       </section>
 
-      {/* FUTURE LAND USE SECTION */}
       <section className="section bg-surface">
-        <div className="container">
-          <div style={{ textAlign: "center", marginBottom: "4rem" }}>
-             <h2>4. Future Land Use & Load Bearing</h2>
-             <p style={{ maxWidth: "800px", margin: "0 auto" }}>How you intend to use the land determines the engineering spec of the backfill.</p>
-          </div>
-          <div className="grid grid-cols-3 gap-8">
-             <div style={{ background: "white", padding: "2rem", borderRadius: "var(--radius-md)", border: "1px solid var(--border)" }}>
-                <h4>For Patios & Pavers</h4>
-                <p style={{ fontSize: "0.9rem" }}>Requires 90% compaction. We focus on horizontal stability to ensure your pavers never shift or "wave" after a Florida thunderstorm.</p>
-             </div>
-             <div style={{ background: "white", padding: "2rem", borderRadius: "var(--radius-md)", border: "1px solid var(--border)" }}>
-                <h4>For ADUs & Structures</h4>
-                <p style={{ fontSize: "0.9rem" }}>Requires 95%+ compaction and engineering sign-off. We provide the "Certificate of Compaction" your builder will need for permit approval.</p>
-             </div>
-             <div style={{ background: "white", padding: "2rem", borderRadius: "var(--radius-md)", border: "1px solid var(--border)" }}>
-                <h4>For Lawns & Gardens</h4>
-                <p style={{ fontSize: "0.9rem" }}>Focus on drainage over extreme density. We ensure the bottom layers are stable while the top layers allow for root penetration and water flow.</p>
-             </div>
-          </div>
+        <div className="container"><div style={{ textAlign: "center", marginBottom: "3rem" }}><h2>Future Use Should Determine the Backfill Scope</h2><p style={{ maxWidth: "800px", margin: "0 auto", color: "var(--text-muted)", lineHeight: 1.8 }}>Tell the contractor what you may do with the former pool area before demolition begins. A lawn and a future building are not the same end use.</p></div>
+          <div className="grid grid-cols-3 gap-8">{[["Lawn & Landscaping", "The project still needs suitable fill and drainage, but the structural requirements may differ from an area intended to support a building."], ["Patio, Pavers or Hardscape", "Settlement can affect finished surfaces, so the base and compaction approach should be coordinated with the planned hardscape system."], ["Future Structure", "If you may build an addition, garage, ADU or other structure, involve the appropriate design and permitting professionals early. Additional investigation, engineered fill or foundation design may be needed."]].map(([title, text]) => (<div key={title} style={{ background: "white", padding: "2rem", borderRadius: "var(--radius-md)", border: "1px solid var(--border)" }}><h3 style={{ fontSize: "1.15rem" }}>{title}</h3><p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.7 }}>{text}</p></div>))}</div>
+          <p style={{ textAlign: "center", marginTop: "2rem" }}>Also see <Link href="/blog/building-after-pool-removal" style={{ color: "var(--primary)", fontWeight: 600, textDecoration: "underline" }}>building after pool removal</Link> and our <Link href="/full-vs-partial-pool-removal" style={{ color: "var(--primary)", fontWeight: 600, textDecoration: "underline" }}>full vs partial removal comparison</Link>.</p>
         </div>
       </section>
 
-      {/* MASSIVE FAQ SECTION (The Authority Booster) */}
       <section className="section">
-        <div className="container">
-          <div style={{ marginBottom: "3rem" }}>
-            <h2 style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-              <HelpCircle size={32} color="var(--primary)" />
-              Soil Stabilization & Compaction FAQ
-            </h2>
-          </div>
-          <div className="grid grid-cols-2 gap-x-12 gap-y-8">
-            {[
-              { q: "What is 'Nuclear Density Testing' for pool fill?", a: "It is a process where an engineer uses a gauge to measure the density and moisture of the soil in real-time. It's the only way to prove to a building inspector that the ground is solid enough to support a new structure." },
-              { q: "Can I use 'Free Dirt' from a construction site?", a: "NEVER. Free dirt often contains clay, debris, or organic matter. In Tampa, clay holds too much water and causes 'swelling,' while organics rot and create underground voids (sinkholes)." },
-              { q: "How long does it take for the soil to settle naturally?", a: "If properly compacted in lifts, settling is negligible (less than 1 inch). If just 'dumped in,' it can settle for 5-10 years, causing anything built on top to crack." },
-              { q: "What is a 'Lift' in compaction terms?", a: "A lift is a layer of soil. We fill the pool 10 inches at a time, compact it, and then add the next 10 inches. This ensures the bottom is just as dense as the top." },
-              { q: "Do I need an engineer to sign off on the backfill?", a: "If you plan to build a permanent structure (like a house addition) over the old pool, yes. We coordinate with local Tampa engineers to provide this documentation." },
-              { q: "How does Tampa's water table affect the soil density?", a: "High water tables can 'liquefy' sand if it isn't compacted correctly. We use specific dewatering techniques to ensure the soil is dry enough to reach maximum density during the process." }
-            ].map((faq, i) => (
-              <div key={i} className="faq-item">
-                <h4 style={{ color: "var(--primary)", fontSize: "1.05rem", marginBottom: "0.5rem" }}>Q: {faq.q}</h4>
-                <p style={{ fontSize: "0.95rem", lineHeight: 1.6, color: "var(--text-muted)" }}>{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <div className="container"><div style={{ maxWidth: "900px", margin: "0 auto" }}><h2 style={{ textAlign: "center", marginBottom: "2.5rem" }}>Pool Backfill & Soil Stabilization FAQ</h2><div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>{[["What is a Proctor test?", "A laboratory Proctor test establishes a reference maximum dry density and optimum moisture relationship for a particular soil under a defined test method. A project specification may require field density to reach a stated percentage of that reference."], ["Does every pool removal need density testing?", "Not necessarily. Testing requirements depend on the scope, jurisdiction, engineering requirements and future use. Ask whether testing is required and whether it is included in the proposal."], ["Can demolition debris be left in the pool?", "That depends on the permitted removal method and local requirements. A partial-removal scope may differ from a full removal, so the contract should state exactly what material remains and what is hauled away."], ["How much settlement is normal?", "There is no responsible universal promise for every site. Settlement risk depends on existing soils, fill, moisture, placement, compaction and loading. Avoid contractors who guarantee a precise result without evaluating the property and scope."], ["Do I need an engineer if I want to build later?", "Future construction may require geotechnical, structural or other professional input depending on the project. Raise the future-building plan before pool removal so the demolition and fill work can be coordinated with later design."], ["What records should I keep?", "Keep the demolition contract, permit and inspection records, fill or material documentation, and any testing or engineering reports produced for the project."]].map(([q, a]) => (<div key={q} className="glass-card" style={{ padding: "2rem" }}><h3 style={{ display: "flex", alignItems: "center", gap: "0.75rem", fontSize: "1.1rem" }}><HelpCircle size={20} color="var(--primary)" />{q}</h3><p style={{ margin: 0, lineHeight: 1.8, color: "var(--text-muted)" }}>{a}</p></div>))}</div></div></div>
       </section>
 
-      {/* MACHINERY & EQUIPMENT SPECS (The Heavy Lifting) */}
-      <section className="section bg-surface-alt">
-        <div className="container">
-          <div className="grid grid-cols-2 gap-16 items-start">
-             <div className="glass-card" style={{ padding: "3rem" }}>
-                <Hammer size={40} color="var(--primary)" style={{ marginBottom: "1rem" }} />
-                <h3>The Machinery of Stabilization</h3>
-                <p style={{ fontSize: "0.95rem", lineHeight: 1.8 }}>
-                  Soil stabilization isn't just about the dirt; it's about the energy applied to it. We utilize a fleet specifically chosen for the high-sand, high-moisture environments of the Tampa Bay area.
-                </p>
-                <ul style={{ listStyle: "none", padding: 0, marginTop: "1.5rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
-                   <li><strong>Compact Excavators (3-5 Ton):</strong> Essential for tight South Tampa lot lines where larger machines would crack neighboring driveways.</li>
-                   <li><strong>Vibratory Trench Rollers:</strong> Remote-controlled rollers that apply high-frequency vibration to deep lifts, ensuring the bottom 4 feet are as dense as the top 1 foot.</li>
-                   <li><strong>Low-Ground-Pressure (LGP) Bobcats:</strong> Specially tracked machines that prevent "churning" the sub-surface sand, which can destroy existing drainage corridors.</li>
-                </ul>
-             </div>
-             <div>
-                <h2 style={{ fontSize: "2.2rem", marginBottom: "1.5rem" }}>Stabilization for Waterfront Properties</h2>
-                <p style={{ fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "1.5rem" }}>
-                  If your property is in Snell Isle, Davis Islands, or near the Hillsborough River, your soil stabilization needs are 3x more complex. The proximity to salt water means the water table is likely 2-3 feet from the surface.
-                </p>
-                <div style={{ background: "rgba(255,165,0,0.1)", padding: "1.5rem", borderRadius: "8px", borderLeft: "4px solid orange" }}>
-                   <p style={{ margin: 0, fontSize: "0.95rem", fontWeight: 600 }}>⚠️ WARNING: The Hydro-Static Pop</p>
-                   <p style={{ margin: "0.5rem 0 0", fontSize: "0.9rem" }}>
-                     In waterfront areas, removing a pool can cause the surrounding soil to "liquefy" due to pressure imbalances. We use a proprietary dewatering and lateral bracing strategy to ensure your seawall or foundation doesn't shift during the backfill process.
-                   </p>
-                </div>
-                <p style={{ marginTop: "1.5rem", fontSize: "1rem", color: "var(--text-muted)" }}>
-                  We coordinate with **Florida structural engineers** to ensure that our backfill plan respects the load-bearing requirements of the local coastline, preventing long-term erosion or lateral migration toward the water.
-                </p>
-             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* THE PROCTOR DENSITY DEEP DIVE */}
-      <section className="section">
-        <div className="container">
-          <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-            <h2 style={{ fontSize: "2.5rem", textAlign: "center", marginBottom: "3rem" }}>Understanding Proctor Density & Compaction Testing</h2>
-            <div className="grid grid-cols-2 gap-12">
-              <div>
-                <p style={{ fontSize: "1.05rem", lineHeight: 1.8 }}>
-                  Most "pool guys" will tell you they "packed it down with the bobcat." In the world of soil engineering, this is called **Static Weight Compaction**, and it only affects the top 2-4 inches of soil. 
-                  <br /><br />
-                  To reach the **95% Modified Proctor Density** required for building, you need **Dynamic Force**. This involves high-frequency vibration that causes the sand grains to rearrange into their most efficient geometric configuration, essentially "locking" them together.
-                </p>
-              </div>
-              <div>
-                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem", border: "1px solid var(--border)" }}>
-                  <thead>
-                    <tr style={{ background: "var(--surface-alt)" }}>
-                      <th style={{ padding: "1rem", textAlign: "left", borderBottom: "2px solid var(--border)" }}>Land Use</th>
-                      <th style={{ padding: "1rem", textAlign: "center", borderBottom: "2px solid var(--border)" }}>Required Density</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td style={{ padding: "1rem", borderBottom: "1px solid var(--border)" }}>Non-Structural Garden/Lawn</td><td style={{ padding: "1rem", textAlign: "center", borderBottom: "1px solid var(--border)" }}>85% - 88%</td></tr>
-                    <tr><td style={{ padding: "1rem", borderBottom: "1px solid var(--border)" }}>Paver Patios / Walkways</td><td style={{ padding: "1rem", textAlign: "center", borderBottom: "1px solid var(--border)" }}>90% - 92%</td></tr>
-                    <tr><td style={{ padding: "1rem", borderBottom: "1px solid var(--border)" }}>Foundation Support (ADUs/Kitchens)</td><td style={{ padding: "1rem", textAlign: "center", borderBottom: "1px solid var(--border)" }}>95% - 98%</td></tr>
-                    <tr><td style={{ padding: "1rem", borderBottom: "1px solid var(--border)" }}>Commercial Load Bearing</td><td style={{ padding: "1rem", textAlign: "center", borderBottom: "1px solid var(--border)" }}>100%</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* EXTENDED FAQ SECTION */}
-      <section className="section bg-surface">
-        <div className="container">
-          <h2 style={{ marginBottom: "3rem", textAlign: "center" }}>Advanced Soil Stabilization FAQ</h2>
-          <div className="grid grid-cols-3 gap-8">
-            {[
-              { q: "What is 'Lifting' in soil engineering?", a: "Lifting refers to adding fill in layers (usually 6-12 inches). Each lift is compacted individually. If you dump 6 feet of dirt into a hole at once, only the top layer is compacted, leaving a soft, settling core underneath." },
-              { q: "Why is Florida sand harder to compact than clay?", a: "Sand is 'non-cohesive,' meaning the particles don't stick together. Clay is cohesive and 'packs' easily but holds too much water. Sand requires the perfect moisture balance to lock into place." },
-              { q: "How do you prevent air pockets around the broken concrete?", a: "In a partial removal, we use high-vibration machines to 'shake' the sand into every crevice of the broken pool floor, ensuring no voids remain to collapse later." },
-              { q: "What happens if it rains during the backfill?", a: "Heavy rain can actually help with 'hydro-compaction' if managed correctly, but it can also wash out the fines. We monitor moisture content and wait for the 'Optimum Moisture Range' before final compaction." },
-              { q: "What is 'Nuclear Density' vs 'Sand Cone' testing?", a: "Nuclear testing is instant and allows us to keep working. Sand cone testing is more traditional but takes 24 hours for lab results. We prefer Nuclear for its speed and accuracy on the job site." },
-              { q: "Do you use lime or cement for stabilization?", a: "Rarely in residential pool removals. Lime is used for clay soils. For Tampa sand, we rely on mechanical vibration and moisture control, which is cleaner and more cost-effective." },
-              { q: "Can I plant a tree over the old pool area?", a: "Yes, but we must leave the top 3-4 feet 'un-compacted' or use structural soil that allows for root growth. We can customize the compaction levels based on your landscaping plan." },
-              { q: "Does the type of fill matter for drainage?", a: "Yes. Using 'Dirty Fill' with too much silt will block drainage. We use 'A-3' sand or clean fill that matches the native Florida soil profile for perfect drainage." },
-              { q: "How do I prove the yard is stable when I sell my home?", a: "We provide a signed 'Compaction Report.' This document becomes part of your home's permanent record and is vital during home inspections and title transfers." }
-            ].map((faq, i) => (
-              <div key={i} style={{ background: "white", padding: "1.5rem", borderRadius: "12px", border: "1px solid var(--border)" }}>
-                 <p style={{ fontWeight: 800, marginBottom: "0.75rem", color: "var(--primary)" }}>{faq.q}</p>
-                 <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", margin: 0 }}>{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <section className="section bg-primary text-white" style={{ textAlign: "center" }}><div className="container"><h2 style={{ color: "white" }}>Planning a Tampa Pool Removal?</h2><p style={{ maxWidth: "720px", margin: "1rem auto 2rem", opacity: 0.9 }}>Use the estimator for a planning range, then compare site-specific quotes that clearly describe demolition, backfill, compaction, drainage and permit responsibility.</p><Link href="#calculator" className="btn btn-accent">Get My Estimate <ArrowRight size={18} /></Link></div></section>
     </>
   );
 }
