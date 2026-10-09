@@ -455,6 +455,7 @@ export default function WesleyChapelPage() {
           </div>
         </div>
       </section>
+      <section className="section bg-surface"><div className="container" style={{ maxWidth: "900px" }}><h2>Planning pool removal in the Tampa Bay area?</h2><p>Compare local demolition methods, permit questions, and site conditions in our <Link href="/" style={{ color: "var(--primary)", fontWeight: 700 }}>Tampa pool removal and demolition guide</Link>. For a cost-focused overview, see <Link href="/pool-removal-cost-tampa">Tampa pool removal cost factors</Link>.</p></div></section>
     </>
   );
 }
