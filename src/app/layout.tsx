@@ -12,10 +12,10 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://poolremovaltampa.com"),
   title: "Pool Removal Tampa, FL | Tampa Pool Removal & Demolition",
-  description: "Pool removal in Tampa requires proper drainage and soil stabilization. Most projects range $9k–$18k. Get a fast estimate today.",
+  description: "Explore Tampa pool removal costs, full versus partial demolition, permits, drainage, and site preparation. Compare options and request an estimate.",
   openGraph: {
     title: "Pool Removal Tampa, FL | Cost, Drainage & Permits",
-    description: "Pool removal in Tampa requires proper drainage and soil stabilization. Most projects range $9k–$18k. Get a fast estimate today.",
+    description: "Explore Tampa pool removal costs, full versus partial demolition, permits, drainage, and site preparation. Compare options and request an estimate.",
     url: "https://poolremovaltampa.com",
     siteName: "Tampa Pool Removal & Demolition",
     locale: "en_US",
@@ -95,8 +95,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <li><Link href="/resources/pasco-pool-permits" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Pasco County Permits</Link></li>
                 <li><Link href="/pool-removal/fiberglass" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Fiberglass Pool Removal</Link></li>
                 <li><Link href="/resources/soil-stabilization-backfill" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Soil Stabilization & Backfill</Link></li>
-                <li><Link href="/resources/high-water-table-dewatering" style={{ color: 'var(--secondary)', fontSize: '0.9rem', fontWeight: 600 }}>Dewatering Specialist Guide</Link></li>
-                <li><Link href="/blog/do-you-need-a-permit-in-tampa" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Mandatory Permit Guide</Link></li>
+                <li><Link href="/resources/high-water-table-dewatering" style={{ color: 'var(--secondary)', fontSize: '0.9rem', fontWeight: 600 }}>Groundwater & Dewatering Guide</Link></li>
+                <li><Link href="/blog/do-you-need-a-permit-in-tampa" style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Tampa Permit Guide</Link></li>
                 <li><Link href="/blog/high-water-table-issues" style={{ color: 'var(--text-light)' }}>Hydrostatic Pressure Guide</Link></li>
                 <li><Link href="/blog/building-after-pool-removal" style={{ color: 'var(--text-light)' }}>Building Over Pools Guide</Link></li>
               </ul>
