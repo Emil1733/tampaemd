@@ -23,7 +23,6 @@ const indexing = google.indexing('v3');
 const baseUrl = 'https://poolremovaltampa.com';
 const urls = [
   '',
-  '/pool-removal',
   '/pool-removal-cost-tampa',
   '/full-vs-partial-pool-removal',
   '/pool-demolition-process',
