@@ -305,6 +305,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="section bg-surface"><div className="container"><h2>Explore Tampa Pool Removal by Project and Location</h2><p>Start with the <Link href="/pool-removal-cost-tampa">Tampa pool removal cost guide</Link>, compare <Link href="/full-vs-partial-pool-removal">full and partial pool removal</Link>, or review the <Link href="/pool-demolition-process">pool demolition process</Link>. For local planning, see <Link href="/tampa-service-areas/south-tampa">South Tampa pool removal considerations</Link> and the <Link href="/tampa-service-areas">Tampa Bay area guide</Link>.</p></div></section>
     </>
   );
 }
