@@ -223,6 +223,7 @@ export default function DewateringResource() {
           <Link href="/#calculator" className="btn" style={{ background: "white", color: "var(--primary)" }}>Estimate My Pool Removal</Link>
         </div>
       </section>
+      <section className="section bg-surface"><div className="container"><h2>Related Tampa pool removal planning guides</h2><p>Groundwater conditions can affect <Link href="/pool-removal-cost-tampa">pool removal costs in Tampa</Link> and the <Link href="/pool-demolition-process">demolition and backfill process</Link>. Explore <Link href="/tampa-service-areas/south-tampa">South Tampa site-access considerations</Link> or the <Link href="/tampa-service-areas">Tampa Bay area guide</Link> for local planning context.</p></div></section>
     </>
   );
 }
