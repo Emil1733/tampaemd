@@ -66,6 +66,7 @@ export default function PinellasPermits() {
 
       <section className="section bg-primary text-white" style={{ textAlign: "center" }}><div className="container"><h2 style={{ color: "white" }}>Planning a Pool Removal in Pinellas County?</h2><p style={{ maxWidth: "720px", margin: "1rem auto 2rem", opacity: 0.9 }}>Use the estimator for an initial planning range, then confirm the exact permit requirements and request a site-specific contractor quote.</p><Link href="#calculator" className="btn btn-accent">Get My Estimate <ArrowRight size={18} /></Link></div></section>
       <section className="section bg-surface"><div className="container" style={{ maxWidth: "900px" }}><h2>Planning pool removal in the Tampa Bay area?</h2><p>Compare local demolition methods, permit questions, and site conditions in our <Link href="/" style={{ color: "var(--primary)", fontWeight: 700 }}>Tampa pool removal and demolition guide</Link>. For a cost-focused overview, see <Link href="/pool-removal-cost-tampa">Tampa pool removal cost factors</Link>.</p></div></section>
+      <section className="section bg-surface"><div className="container"><h2>Related pool removal guides</h2><p>Review <Link href="/full-vs-partial-pool-removal">full versus partial pool removal</Link> and the <Link href="/pool-demolition-process">typical demolition process</Link>. For nearby locations, see the <Link href="/tampa-service-areas">Tampa Bay area guide</Link>.</p></div></section>
     </>
   );
 }
